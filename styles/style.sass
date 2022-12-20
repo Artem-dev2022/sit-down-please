@@ -1,0 +1,505 @@
+$primary: #A65CF0
+$primary-light: #C998FB
+$primary-shade: #7033AC
+$pink-light: #F8EFFF
+$pink-violet: #EBD1FF
+$secondary: #FF862F
+$secondary-light: #FFBD59
+$secondary-shade: #BB370E
+$red-input: #FF6972
+$green-input: #B8EC64
+$gold: #D5B986
+$white: #FFFFFF
+$grey-light: #F7F7F7
+$md-grey: #EAEAEA
+$grey: #999999
+$grey-shade: #666666
+$black: #333333
+$background-20: rgba(0, 0, 0, 0.2)
+$lime-color: #DAFFD1
+$bone: #FFF5D1
+
+.hero
+    margin-bottom: 70px
+    .swiper 
+        width: 1920px
+        height: 400px
+        margin: 0 auto
+    .swiper-slide
+        position: relative
+        height: 100%
+    .swiper-pagination
+        bottom: 23px !important
+    .swiper-pagination-bullet
+        width: 14px
+        height: 14px
+        margin: 0 !important
+        margin-right: 16px !important
+    .swiper-pagination-bullet:last-child
+        margin: 0 !important
+        margin-right: 0 !important
+    .swiper-pagination-bullet-active
+        background-color: $black
+    .content
+        flex-direction: column
+        justify-content: space-between
+        position: absolute
+        top: 0
+        padding: 80px 0
+        height: 100%
+        &__title
+            color: $grey
+            font-weight: 700
+            font-size: 48px
+            line-height: 65px
+        .white
+            color: $white
+    &__bottom__btn
+        display: none
+.special
+    margin-bottom: 70px
+    &__title
+        margin: 0
+    &__swiper
+        height: 569px
+        padding-top: 58px
+        &__head
+            justify-content: space-between
+            margin-bottom: 26px
+        .swiper-wrapper
+            height: 511px
+    &__slide
+        position: relative
+        flex-direction: column
+        justify-content: flex-end
+        background: $grey-light
+        border-radius: 10px
+        padding: 30px
+        height: 511px
+        &__discount
+            position: absolute
+            top: 29px
+            left: 0
+            width: 92px
+            height: 34px
+            background-image: url("/img/sale.svg")
+            font-weight: 700
+            font-size: 14px
+            padding: 10px 21px
+            color: $white
+        &__img
+            align-self: center
+            margin-bottom: 16px
+        .s-s-img-1
+            width: 193px
+            height: 210px
+        .s-s-img-2
+            width: 450px
+            height: 245px
+        .s-s-img-3
+            width: 149px
+            height: 218px
+        .s-s-img-4
+            width: 117px
+            height: 210px
+        .s-s-img-5
+            width: 463px
+            height: 223px
+        .s-s-img-6
+            width: 183px
+            height: 218px
+        &__title
+            font-weight: 400
+            font-size: 24px
+            line-height: 130%
+            color: $black
+            margin-bottom: 23px
+        &__prices
+            margin-bottom: 23px
+        &__sale
+            font-weight: 400
+            font-size: 18px
+            line-height: 130%
+            color: $secondary
+            margin-right: 30px
+        &__regular
+            font-weight: 400
+            font-size: 16px
+            line-height: 150%
+            text-decoration-line: line-through
+            color: $grey
+        &__scheme
+            position: absolute
+            bottom: 30px
+            right: 30px
+        &__secondary
+            width: 296px !important
+        &__main
+            width: 624px 
+    &__buttons
+        justify-content: space-between
+        width: 77px
+        height: 32px
+    .swiper-button-prev,
+    .swiper-button-next
+        position: static
+        height: 32px
+        width: 32px
+        margin: 0
+    .swiper-button-prev:after,
+    .swiper-button-next:after
+        display: none
+        --swiper-navigation-size: 0
+    .swiper-button-disabled svg path,
+    .swiper-button-disabled svg circle
+        stroke: $grey
+    .swiper-button-disabled
+        opacity: 1 !important
+
+.high-raiting
+    margin-bottom: 70px
+    .container
+        flex-direction: column
+        align-items: center
+    &__title
+        width: 100%
+    &__block
+        display: grid
+        max-width: 100%
+        grid-template-columns: repeat(4, 1fr)
+        gap: 32px
+        margin-bottom: 32px
+    &__card
+        flex-direction: column
+        justify-content: space-between
+        position: relative
+        padding: 30px
+        height: 420px
+        border-radius: 10px
+        background-color: $grey-light
+        &__raiting
+            color: $secondary
+            font-weight: 400
+            font-size: 16px
+            line-height: 130%
+            background-image: url('/img/star.svg')
+            background-position: left center
+            padding-left: 21px
+        &__img
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 229px
+            margin: 0 auto
+        &__info
+        &__title
+            color: $black
+            font-weight: 400
+            font-size: 24px
+            line-height: 130%
+            margin-bottom: 24px
+        &__price
+            color: $grey-shade
+            font-weight: 400
+            font-size: 16px
+            line-height: 130%
+            margin-bottom: 24px
+    &__btn
+        width: 296px
+
+.oxford
+    flex-direction: column
+    align-items: center
+    position: relative
+    margin-bottom: 70px
+    &__img
+        margin: 0 auto
+    .container
+        position: absolute
+        top: 0
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+        padding: 150px 0
+    &__title
+        color: $white
+        font-weight: 400
+        font-size: 48px
+        line-height: 110%
+        span
+            font-family: 'PlayfairDisplay'
+            font-weight: 900
+            font-size: 60px
+            line-height: 135%
+            color: $gold
+
+.top-categories
+    margin-bottom: 70px
+    &__title
+    &__block
+        display: grid
+        max-width: 100%
+        grid-template-columns: repeat(6, 1fr)
+        gap: 32px
+        grid-template-areas: "top-left top-left top-left top-right top-right top-right" "bottom-left bottom-left bottom-mid bottom-mid bottom-right bottom-right"
+    &__card
+        flex-direction: column
+        justify-content: space-between
+        padding: 30px
+        background-color: $grey-light
+        border-radius: 10px
+        background-position: left 121px
+        &__list
+            margin-bottom: 14px
+        &__item
+            color: $grey
+            font-weight: 400
+            font-size: 14px
+            line-height: 100%
+            margin-right: 30px
+            background-position: left center
+        &__title
+            font-weight: 400
+            font-size: 24px
+            line-height: 33px
+        &__link
+            align-items: center
+            color: $primary
+            font-weight: 700
+            font-size: 16px
+            line-height: 120%
+            width: 108px
+            p
+                margin-right: 5px
+                transition: text-decoration 0.3s ease
+            svg circle
+                transition: fill 0.3s ease
+        &__link:hover p
+            text-decoration: underline
+        &__link:hover svg circle
+            fill: $primary
+        &__link:hover svg path
+            stroke: $white
+        &__link:focus
+            text-decoration: underline
+        &__link:focus svg circle
+            fill: $primary-light
+            stroke: $primary
+        &__link:focus svg path
+            stroke: $white
+        &__link:active
+            color: $primary-shade
+        &__link:active svg circle
+            fill: $primary-shade
+            stroke: $primary-shade
+    .t-c-c-1
+        grid-area: top-left
+        height: 511px
+        background-image: url('/img/sofa.png')
+    .t-c-c-2
+        grid-area: top-right
+        height: 511px
+        background-image: url('/img/armchair.png')
+    .t-c-c-3
+        grid-area: bottom-left
+        height: 405px
+        background-image: url('/img/bed.png')
+    .t-c-c-4
+        grid-area: bottom-mid
+        height: 405px
+        background-image: url('/img/dresser.png')
+    .t-c-c-5
+        grid-area: bottom-right
+        height: 405px
+        background-image: url('/img/chair.png')
+
+.useful
+    margin-bottom: 70px
+    &__swiper
+        height: 734px
+        &__head
+            justify-content: space-between
+            margin-bottom: 26px
+        .swiper-wrapper
+            height: 676px
+    &__title
+        margin: 0
+    &__buttons
+        justify-content: space-between
+        width: 77px
+        height: 32px
+    &__slide
+        flex-direction: column
+        justify-content: flex-end
+        width: 624px
+        height: 676px
+        background-color: $grey-light
+        border-radius: 10px
+    &__content
+        flex-direction: column
+        justify-content: space-between
+        padding: 30px
+        height: 250px
+    &__text
+        font-weight: 400
+        font-size: 24px
+        line-height: 33px
+        color: $black
+    .u-s-1
+        background-image: url("/img/useful-1.jpg")
+    .u-s-2
+        background-image: url("/img/useful-2.jpg")
+    .u-s-3
+        background-image: url("/img/useful-3.jpg")
+    .u-s-4
+        background-image: url("/img/useful-4.jpg")
+    .u-s-5
+        background-image: url("/img/useful-5.jpg")
+    .u-s-6
+        background-image: url("/img/useful-6.jpg")
+    .swiper-button-prev,
+    .swiper-button-next
+        position: static
+        height: 32px
+        width: 32px
+        margin: 0
+    .swiper-button-prev:after,
+    .swiper-button-next:after
+        display: none
+    --swiper-navigation-size: 0
+    .swiper-button-disabled svg path,
+    .swiper-button-disabled svg circle
+        stroke: $grey
+    .swiper-button-disabled
+        opacity: 1 !important
+
+.we-glad
+    margin-bottom: 71px
+    .container
+        justify-content: space-between
+        align-items: center
+    &__title
+        margin-bottom: 8px
+    &__form
+        position: relative
+        flex-direction: column
+        width: 624px
+        &__text
+            font-weight: 400
+            font-size: 14px
+            line-height: 19px
+            color: $grey-shade
+            margin-bottom: 16px
+        &__field
+            position: relative
+            flex-direction: column-reverse
+            width: 100%
+        .checkbox-field .just-validate-error-label
+            top: 20px
+            left: 0
+        .just-validate-error-label
+            position: absolute
+            top: -22px
+            left: 18px
+            font-weight: 400
+            font-size: 12px
+            line-height: 16px
+            color: $red-input !important
+        &__input
+            padding-left: 18px
+            width: 100%
+            height: 54px
+            background-color: $grey-light
+            border-radius: 10px
+            margin-bottom: 30px
+            border: 1px solid $grey-light
+            transition: all 0.3s ease
+        &__input:hover
+            background-color: $md-grey
+        &__input:focus
+            border: 1px solid $primary
+            background-color: $pink-light
+        &__input:active
+            color: $black
+            border: 1px solid $md-grey
+            background-color: $white
+        &__btn
+            font-weight: 600
+            width: 159px
+            height: 54px
+            margin-bottom: 12px
+        label
+            font-weight: 400
+            font-size: 14px
+            line-height: 19px
+            color: $black
+        &__checkbox
+            width: 14px
+            height: 14px
+            background-color: $primary
+            margin-right: 8px
+        &__link
+            color: $primary
+            text-decoration: underline
+    &__img
+        width: 624px
+        height: 383px
+    #agree
+        display: none
+    #agree + .check
+        position: relative
+        width: 14px
+        height: 14px
+        border: 1px solid $grey
+        border-radius: 2px
+        margin-right: 8px
+        transform: translateY(2px)
+        overflow: hidden
+        transition: all 0.3s ease
+    #agree + .check:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 1px
+        right: 0
+        bottom: 0
+    #agree:checked + .check
+        background-color: $primary
+        border: 1px solid $primary
+    #agree:checked + .check:before
+        background-color: $primary
+        background-image: url('/img/check.svg')
+        background-repeat: no-repeat
+        background-position: center
+
+.tooltip
+    position: absolute
+    top: 60px
+    right: 105px
+    &__icon
+        position: absolute
+        transform: translateY(2px)
+        cursor: pointer
+        width: 14px
+        height: 14px
+        background-image: url('/img/tooltip.svg')
+        transition: all 0.3s ease
+    &__hint
+        position: absolute
+        bottom: 2px
+        left: -71px
+        padding: 5px
+        width: 157px
+        height: 60px
+        color: $white
+        background-image: url('/img/hint.svg')
+        font-weight: 400
+        font-size: 9px
+        line-height: 14px
+        text-align: center
+        opacity: 0
+        transition: opacity 0.3s ease
+    &__icon:hover + .tooltip__hint
+        opacity: 1
+    &__icon:hover
+        background-image: url('/img/tooltip-hover.svg')

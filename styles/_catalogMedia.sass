@@ -1,0 +1,144 @@
+@media (max-width: 6000px)
+    .catalog__filter__item__dropdown
+        position: static
+    .filter__dropdown__hidden
+        visibility: visible
+        opacity: 1
+
+@media (max-width: 1540px)
+    .catalog
+        &__container
+            flex-direction: column !important
+        &__filter
+            position: absolute
+            top: 370px
+            justify-content: center
+            width: 952px !important
+            height: 40px !important
+            padding: 6px 0 !important
+            &__top
+                display: flex
+                flex-direction: row !important
+                justify-content: space-between
+                height: 40px !important
+            &__title
+                display: none
+                &__mobile
+                    display: block !important
+                    padding-top: 11px
+            &__list
+                flex-direction: row !important
+                .price
+                    &__fields
+                        flex-direction: column
+                    &__field:first-child
+                        margin-bottom: 20px
+                
+            &__item
+                position: relative
+                width: 187px
+                height: 40px
+                margin-right: 32px
+                &__btn
+                    display: flex !important
+                    z-index: 3 !important
+                &__dropdown
+                    position: absolute
+                    top: 25px
+                    padding: 20px 10px 10px 10px
+                    border: 2px solid #f7f7ff
+                    background-color: #ffffff
+                    border-radius: 10px
+                    z-index: 2 !important
+                    width: 100%
+            &__item:last-child
+                margin-right: 0
+            &__item__title
+                display: none
+            &__oxford
+                display: none
+        #range-slider
+            display: none
+        &__products
+            &__title
+                margin-bottom: 88px !important
+            &__filter
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 32px
+                &__wrapper
+                    flex-direction: row
+                    justify-content: space-between
+                    width: 844px
+                &__item
+
+    .filter__dropdown__hidden
+        visibility: hidden
+        opacity: 0
+
+@media (max-width: 1023px)
+    .catalog
+        &__filter
+            width: 624px !important
+            &__title__mobile
+                margin-bottom: 16px
+            &__top,
+            &__list
+                width: 624px
+                flex-wrap: wrap
+            &__item
+                margin-bottom: 16px !important
+            &__item:nth-child(1),
+            &__item:nth-child(2)
+                z-index: 100 !important
+            &__item:nth-child(3),
+            &__item:nth-child(4)
+                z-index: 10 !important
+        &__products
+            &__title
+                margin-bottom: 191px !important
+            &__block
+                grid-template-columns: repeat(2, 1fr) !important
+                margin-bottom: 33px !important
+            &__pagination
+                display: flex
+                flex-wrap: nowrap
+            &__pagination__page:nth-child(2)
+                margin-right: 16px
+            &__pagination__page:nth-child(3)
+                display: block !important
+    .c-7,
+    .c-8,
+    .c-9,
+    .c-10,
+    .c-11,
+    .c-12
+        display: none
+
+@media (max-width: 767px)
+    .header
+        margin-bottom: 32px !important
+    .breadcrump
+        display: none
+    .catalog
+        &__products__title
+            margin-bottom: 177px !important
+        &__filter
+            top: 407px
+        &__filter,
+        &__filter__top,
+        &__filter__list
+            width: 296px !important
+        &__filter__list
+            justify-content: space-between
+        &__filter__item,
+        &__filter__item__btn
+            width: 140px !important
+        &__filter__item
+            margin-right: 0
+        &__filter__checkbox__item
+            font-size: 14px
+        &__products__block
+            width: 296px !important
+            grid-gap: 16px !important

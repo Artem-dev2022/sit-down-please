@@ -1,0 +1,295 @@
+@use 'reset'
+@use 'fonts'
+@use 'header'
+@use 'footer'
+@use 'productCard'
+@use 'productCardMedia'
+@use 'general'
+@use 'media'
+@use 'catalogMedia'
+
+$primary: #A65CF0
+$primary-light: #C998FB
+$primary-shade: #7033AC
+$pink-light: #F8EFFF
+$pink-violet: #EBD1FF
+$secondary: #FF862F
+$secondary-light: #FFBD59
+$secondary-shade: #BB370E
+$red-input: #FF6972
+$green-input: #B8EC64
+$gold: #D5B986
+$white: #FFFFFF
+$grey-light: #F7F7F7
+$md-grey: #EAEAEA
+$grey: #999999
+$grey-shade: #666666
+$black: #333333
+$background-20: rgba(0, 0, 0, 0.2)
+$lime-color: #DAFFD1
+$bone: #FFF5D1
+
+.header
+    margin-bottom: 23px
+    &__bottom__category
+        z-index: 120
+
+.catalog
+    margin-bottom: 70px
+    &__filter
+        flex-direction: column
+        justify-content: space-between
+        width: 296px
+        margin-right: 32px
+        padding-bottom: 63px
+        z-index: 100
+        &__title
+            font-weight: 400
+            font-size: 18px
+            line-height: 130%
+            margin-bottom: 19px
+            color: $black
+            &__mobile
+                display: none
+                font-weight: 400
+                font-size: 14px
+                line-height: 130%
+                color: $black
+        &__list
+            flex-direction: column
+        &__item
+            margin-bottom: 18px
+            z-index: 100
+            &__title
+                font-weight: 600
+                font-size: 16px
+                line-height: 130%
+                color: $grey-shade
+                margin-bottom: 6px
+            &__btn
+                display: none
+                position: absolute
+                top: 0
+                left: 0
+                padding: 9px 15px
+                width: 187px
+                height: 40px
+                background: $grey-light
+                border-radius: 10px
+                justify-content: space-between
+                align-items: center
+                cursor: pointer
+                z-index: 2
+            &__dropdown
+            &__name
+                font-weight: 400
+                font-size: 16px
+                line-height: 22px
+        &__checkbox
+            display: none
+            &__item
+                margin-bottom: 12px
+                p
+                    padding-top: 2px
+        &__checkbox + .check
+            position: relative
+            width: 20px
+            height: 20px
+            border: 1px solid $grey
+            border-radius: 2px
+            margin-right: 11px
+            transform: translateY(2px)
+            overflow: hidden
+            transition: all 0.3s ease
+        &__checkbox + .check:before
+            content: ''
+            position: absolute
+            top: 0
+            left: 1px
+            right: 0
+            bottom: 0
+        &__checkbox:checked + .check
+            background-color: $primary
+            border: 1px solid $primary
+        &__checkbox:checked + .check:before
+            background-color: $primary
+            background-image: url('/img/check.svg')
+            background-repeat: no-repeat
+            background-position: center
+        &__oxford
+            flex-direction: column
+            justify-content: flex-end
+            padding: 30px
+            height: 360px
+            background-image: url('/img/oxford-filter.jpg')
+            background-size: contain
+            background-color: $black
+            border-radius: 10px
+            &__title
+                font-weight: 400
+                font-size: 16px
+                line-height: 22px
+                color: $grey
+                margin-bottom: 12px
+                span
+                    font-style: normal
+                    font-weight: 900
+                    font-size: 24px
+                    line-height: 32px
+                    color: $gold
+                    font-family: 'PlayfairDisplay'
+            &__link
+                p
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 120%
+                    color: $primary
+                    margin-right: 5px
+                    transition: text-decoration 0.3s ease
+                svg circle
+                    transition: fill 0.3s ease
+            &__link:hover p
+                text-decoration: underline
+            &__link:hover svg circle
+                fill: $primary
+            &__link:hover svg path
+                stroke: $white
+            &__link:focus
+                text-decoration: underline
+            &__link:focus svg circle
+                fill: $primary-light
+                stroke: $primary
+            &__link:focus svg path
+                stroke: $white
+            &__link:active
+                color: $primary-shade
+            &__link:active svg circle
+                fill: $primary-shade
+                stroke: $primary-shade
+        .price
+            margin-bottom: 35px
+            &__title
+                margin-bottom: 4px
+            &__text
+                font-weight: 400
+                font-size: 16px
+                line-height: 160%
+                color: $grey-shade
+                margin-right: 10px
+            &__fields
+                justify-content: space-between
+                width: 100%
+                margin-bottom: 10px
+            &__field
+            &__input
+                padding: 4px 13px
+                border: 1px solid $grey
+                border-radius: 2px
+                width: 86px
+                height: 30px
+                transition: all 0.3s ease
+                color: $grey-shade
+            &__input:hover
+                border: 1px solid $primary
+            &__input:focus
+                border: 1px solid $primary
+                background-color: $pink-violet
+            &__input:active
+                border: 1px solid $primary-shade
+                background-color: transparent
+            &__input::-webkit-outer-spin-button,
+            &__input::-webkit-inner-spin-button 
+                -webkit-appearance: none
+            #range-slider
+                width: 100%
+                height: 3px
+            .noUi-target
+                border: none
+            .noUi-connects
+                height: 3px
+                border: none
+                background-color: $md-grey
+            .noUi-connect
+                height: 3px
+                background-color: $primary
+                transition: background-color 0.3s ease
+            .noUi-horizontal .noUi-handle
+                top: 0px
+                right: -6px
+            .noUi-handle
+                box-shadow: none
+                width: 13px !important
+                height: 13px !important
+                border: none
+                background-image: url('/img/range-slider.svg')
+                background-color: transparent
+                background-repeat: no-repeat
+                transition: all 0.3s ease
+            .noUi-handle:hover
+                background-image: url('/img/range-slider-light.svg')
+            #range-slider:focus .noUi-handle-lower,
+            .noUi-handle:active
+                background-image: url('/img/range-slider-shade.svg')
+            #range-slider:focus .noUi-connect,
+            #range-slider:active .noUi-connect
+                background-color: $primary-shade
+            .noUi-touch-area
+                display: none
+            .noUi-handle::before,
+            .noUi-handle::after
+                display: none
+    &__products
+        flex-direction: column
+        &__title
+            font-weight: 400
+            font-size: 24px
+            line-height: 130%
+            color: $black
+            margin-bottom: 24px
+        &__block
+            display: grid
+            width: 100%
+            grid-template-columns: repeat(3, 1fr)
+            gap: 32px
+            margin-bottom: 34px
+        &__pagination
+            width: fit-content
+            align-self: center
+            &__page
+                width: 32px
+                height: 32px
+                background: $white
+                border: 2px solid $primary
+                color: $primary
+                font-weight: 600
+                font-size: 16px
+                line-height: 100%
+                border-radius: 10px
+                cursor: pointer
+                transition: all 0.3s ease
+            &__page:nth-child(3)
+                display: none
+            &__page:hover
+                background: $primary
+                border: 2px solid $primary
+                color: $white
+            &__page:focus
+                background: $primary-light
+                border: 2px solid $primary
+                color: $white
+            &__page:active
+                background: $primary-shade
+                border: 2px solid $primary-shade
+                color: $white
+            &__page:first-child
+                margin-right: 16px
+            &__active
+                background: $primary-shade
+                border: 2px solid $primary-shade
+                color: $white
+
+.hidden-card
+    display: none !important
+
+.active-card
+    display: flex !important

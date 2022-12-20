@@ -1,0 +1,291 @@
+$primary: #A65CF0
+$primary-light: #C998FB
+$primary-shade: #7033AC
+$pink-light: #F8EFFF
+$pink-violet: #EBD1FF
+$secondary: #FF862F
+$secondary-light: #FFBD59
+$secondary-shade: #BB370E
+$red-input: #FF6972
+$green-input: #B8EC64
+$gold: #D5B986
+$white: #FFFFFF
+$grey-light: #F7F7F7
+$md-grey: #EAEAEA
+$grey: #999999
+$grey-shade: #666666
+$black: #333333
+$background-20: rgba(0, 0, 0, 0.2)
+$lime-color: #DAFFD1
+$bone: #FFF5D1
+
+.header
+    margin-bottom: 32px
+    &__top
+        padding: 17px 0
+        background-color: $grey-light
+        height: 50px
+        &__container
+            justify-content: space-between
+        &__region
+            position: relative
+            margin-right: 30px
+            &__your
+                margin-right: 4px
+                color: $black
+            &__choose
+                padding: 2px
+                p,
+                svg svg path
+                    transition: all 0.3s ease
+            &__choose:hover p
+                color: $primary-light
+            &__choose:hover svg path
+                fill: $primary-light
+            &__choose:focus
+                background-color: $primary-light
+            &__choose:active p,
+            &__choose:focus p
+                color: $primary-shade
+            &__choose:active svg path,
+            &__choose:focus svg path
+                fill: $primary-shade
+            &__option
+                font-weight: 400
+                font-size: 16px
+                line-height: 14px
+                margin-right: 4px
+                color: $primary
+            &__btn
+                height: 100%
+            &__arrow
+                pointer-events: none
+                height: 100%
+                transition: transform 0.3s ease
+            &__dropdown
+                position: absolute
+                top: 25px
+                right: 0
+                padding: 16px
+                border: 2px solid $grey-light
+                background-color: $white
+                opacity: 0
+                pointer-events: none
+                transition: opacity 0.3s ease
+            &__list
+            &__city
+                font-weight: 400
+                font-size: 14px
+                line-height: 130%
+                color: $black
+                margin-bottom: 11px
+            .region-dropdown-visibility
+                opacity: 1
+                pointer-events: auto
+            .region-dropdown-rotate
+                transform: rotate(180deg)
+        &__tel
+            align-items: center
+            color: $secondary
+            font-weight: 400
+            font-size: 14px
+            transition: all 0.3s ease
+            svg
+                margin-right: -1px 
+            svg path
+                transition: all 0.3s ease
+        &__tel:hover
+            color: $secondary-light
+        &__tel:hover svg path
+            fill: $secondary-light
+        &__tel:focus
+            background-color: $bone
+        &__tel:active
+            color: $secondary-shade
+        &__tel:active svg path
+            fill: $secondary-shade
+        &__nav
+        &__list
+        &__item
+            font-weight: 400
+            font-size: 14px
+            line-height: 100%
+            color: $grey
+        &__item
+            margin-right: 44px
+        &__item:last-child
+            margin-right: -10px
+        &__link
+            padding: 0 10px
+            transition: all 0.3s ease
+        &__link:focus
+            background-color: $primary-light
+            color: $primary-shade
+        &__link:hover
+            color: $primary
+        &__link:active
+            color: $primary-shade
+            background-color: transparent
+    &__mid
+        padding: 32px 0
+        &__container
+            justify-content: space-between
+        &__item
+            font-weight: 400
+            font-size: 16px
+            line-height: 28px
+            color: $black
+            margin-right: 71px
+        &__item:last-child
+            margin-right: -10px
+        &__link
+            padding: 0 11px 0 10px
+            transition: all 0.3s ease
+        &__link:focus
+            background-color: $primary-light
+            color: $primary-shade
+        &__link:hover
+            color: $primary
+        &__link:active
+            color: $primary-shade
+            background-color: transparent
+        &__burger
+            display: none
+            height: 24px
+    &__bottom
+        &__container
+            justify-content: space-between
+            align-items: center
+        &__left
+        &__search
+            position: relative
+            width: 761px
+            &__input
+                padding: 20px 100px 20px 59px
+                background-color: $grey-light
+                border: 2px solid $grey-light
+                border-radius: 10px 0px 0px 10px
+                width: 100%
+                height: 60px
+                transition: all 0.3s ease
+            &__input:hover
+                background-color: $md-grey
+            &__input:focus
+                background-color: $pink-light
+                border: 2px solid $primary
+            &__input:active
+                background-color: $grey-light
+                border: 2px solid $grey-light
+            &__input:active + svg path
+                fill: $primary
+            &__icon
+                position: absolute
+                top: 20px
+                left: 32px
+            &__btn
+                position: absolute
+                top: 14px
+                right: 32px
+        &__category
+            position: relative
+            width: 300px
+            height: 60px
+            z-index: 10
+            &__btn
+                justify-content: space-between
+                align-items: center
+                padding: 0 32px
+                border: 2px solid $grey-light
+                border-radius: 0px 10px 10px 0px
+                width: 300px
+                height: 60px
+                background-color: $white
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 5
+                transition: all 0.3s ease
+            &__btn:hover
+                border: 2px solid $primary
+            &__btn:focus
+                border: 2px solid $primary
+                background-color: $pink-light
+            &__btn:active
+                border: 2px solid $primary-shade
+                background-color: transparent
+            &__title
+                font-weight: 400
+                font-size: 16px
+                line-height: 22px
+                color: $primary
+                pointer-events: none
+            &__dropdown
+                position: absolute
+                top: 50px
+                left: 0px
+                padding: 22px 30px
+                width: 300px
+                border: 2px solid $grey-light
+                background-color: $white
+                z-index: 1
+                opacity: 0
+                pointer-events: none
+                transition: opacity 0.3s ease
+                border-radius: 0px 0px 10px 10px 
+            &__arrow
+                pointer-events: none
+                transition: all 0.3s ease
+            .category-dropdown-visibility
+                opacity: 1
+                pointer-events: auto
+            .category-dropdown-rotate
+                transform: rotate(180deg)
+            &__list
+                column-count: 2
+                column-gap: 20px
+            &__item
+                font-weight: 400
+                font-size: 16px
+                line-height: 130%
+                color: $black
+                margin-bottom: 11px
+        &__right
+            align-items: center
+            height: 28px
+            &__icon
+                position: relative
+                display: block
+                svg
+                    position: absolute
+            .user
+                width: 26px
+                height: 28px
+            .cart
+                width: 41px
+                height: 28px
+            &__icon:first-child
+                margin-right: 32px
+            &__icon::before
+                content: ""
+                display: block
+                position: absolute
+                top: -3px
+                left: -3px
+                right: -3px
+                bottom: -3px
+                background-color: $primary-light
+                opacity: 0
+                z-index: 1
+            &__icon:focus svg
+                fill: $white
+                z-index: 10
+            &__icon:focus svg path:first-child
+                fill: $white
+            &__icon:focus::before
+                opacity: 1
+            &__icon:hover svg path:first-child
+                fill: $primary-light
+            &__icon:active svg path:first-child
+                fill: $primary-shade
+            &__icon:active::before
+                opacity: 0

@@ -1,0 +1,184 @@
+$primary: #A65CF0
+$primary-light: #C998FB
+$primary-shade: #7033AC
+$pink-light: #F8EFFF
+$pink-violet: #EBD1FF
+$secondary: #FF862F
+$secondary-light: #FFBD59
+$secondary-shade: #BB370E
+$red-input: #FF6972
+$green-input: #B8EC64
+$gold: #D5B986
+$white: #FFFFFF
+$grey-light: #F7F7F7
+$md-grey: #EAEAEA
+$grey: #999999
+$grey-shade: #666666
+$black: #333333
+$background-20: rgba(0, 0, 0, 0.2)
+$lime-color: #DAFFD1
+$bone: #FFF5D1
+
+*
+    outline: none
+    text-decoration: none
+    background-repeat: no-repeat
+
+a
+    color: inherit
+
+body
+    font-family: 'OpenSans'
+    font-weight: 400
+    background-color: $white
+
+.container
+    margin: 0 auto
+
+.btn-primary
+    width: 187px
+    height: 60px
+    background-color: $primary
+    font-weight: 700
+    font-size: 16px
+    line-height: 100%
+    color: $white
+    border-radius: 10px
+    transition: all 0.3s ease
+
+.btn-primary:focus
+    background-color: $primary-light
+    border: 2px solid $primary-shade
+
+.btn-primary:hover
+    background-color: $primary-light
+
+.btn-primary:active
+    background-color: $primary-shade
+    border: 2px solid $primary-shade
+
+.btn-primary:disabled
+    background-color: $md-grey
+    border: none
+    color: $grey
+
+.btn-secondary
+    width: 128px
+    height: 54px
+    border: 2px solid $primary
+    border-radius: 10px
+    font-weight: 600
+    font-size: 16px
+    line-height: 100%
+    color: $primary
+    transition: all 0.3s ease
+
+.btn-secondary:focus
+    background-color: $primary-light
+    color: $white
+    
+.btn-secondary:hover
+    background-color: $primary
+    color: $white
+
+.btn-secondary:active
+    background-color: $primary-shade
+    border: 2px solid $primary-shade
+    color: $white
+
+.arrow circle,
+.arrow path
+    transition: all 0.3s ease
+
+.arrow:focus circle
+    stroke: $primary
+    fill: $primary-light
+
+.arrow:focus path
+    stroke: $white
+
+.arrow:hover circle
+    fill: $primary
+
+.arrow:hover path
+    stroke: $white
+
+.arrow:active circle
+    fill: $primary-shade
+    stroke: $primary-shade
+
+.arrow:active path
+    stroke: $white
+
+.flex
+    display: flex
+
+.title
+    color: $black
+    font-weight: 400
+    font-size: 32px
+    line-height: 100%
+    margin-bottom: 26px
+
+#agree
+    display: none
+#agree + .check
+    position: relative
+    width: 14px
+    height: 14px
+    border: 1px solid $grey
+    border-radius: 2px
+    margin-right: 8px
+    transform: translateY(2px)
+    overflow: hidden
+#agree + .check:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 1px
+    right: 0
+    bottom: 0
+#agree:checked + .check
+    background-color: $primary
+    border: 1px solid $primary
+#agree:checked + .check:before
+    background-color: $primary
+    background-image: url('/img/check.svg')
+    background-repeat: no-repeat
+    background-position: center
+
+.just-validate-success-field
+    border: 1px solid $green-input !important
+.is-invalid
+    border: 1px solid $red-input !important
+
+.breadcrump
+    margin-bottom: 30px
+    &__item
+        color: $grey
+        font-weight: 400
+        font-size: 14px
+        line-height: 100%
+        margin-right: 6px
+        &__active
+            color: $primary-shade
+    &__item:not(:first-child)::before
+        content: '/'
+        margin-right: 3px
+        color: $grey
+
+.swiper-button-prev,
+.swiper-button-next
+    position: static
+    height: 32px
+    width: 32px
+    margin: 0
+.swiper-button-prev:after,
+.swiper-button-next:after
+    display: none
+    --swiper-navigation-size: 0
+.swiper-button-disabled svg path,
+.swiper-button-disabled svg circle
+    stroke: $grey
+.swiper-button-disabled
+    opacity: 1 !important
