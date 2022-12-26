@@ -1372,6 +1372,7 @@ body {
     width: 296px !important;
   }
   .gallery__window {
+    top: 166px;
     width: 952px !important;
     height: 588px !important;
   }
@@ -1384,25 +1385,14 @@ body {
     width: 100% !important;
     height: 166px !important;
   }
-  .gallery__bar__img {
-    height: 126px !important;
-  }
   .gallery__swiper {
-    width: 100% !important;
+    width: 819px !important;
   }
   .gallery__swiper__wrapper {
-    width: 819px !important;
     margin: 0 auto !important;
-    overflow: hidden !important;
   }
   .gallery__swiper__slide {
     width: fit-content !important;
-  }
-  .gallery__swiper__btn__prev {
-    left: 20px !important;
-  }
-  .gallery__swiper__btn__right {
-    right: 20px !important;
   }
 }
 @media (max-width: 1023px) {
@@ -1451,6 +1441,7 @@ body {
     width: 624px !important;
   }
   .gallery__window {
+    top: 199px !important;
     width: 624px !important;
     height: 494px !important;
     padding-top: 50px !important;
@@ -1460,12 +1451,8 @@ body {
     height: 228px !important;
     margin: 0 auto !important;
   }
-  .gallery__swiper__wrapper {
+  .gallery__swiper {
     width: 466px !important;
-  }
-  .gallery__bar__img {
-    width: 253px !important;
-    height: 126px !important;
   }
 }
 @media (max-width: 767px) {
@@ -1633,9 +1620,6 @@ body {
     height: 104px !important;
   }
   .gallery__swiper {
-    width: 100% !important;
-  }
-  .gallery__swiper__wrapper {
     width: 172px !important;
   }
   .gallery__bar__img {
@@ -1985,7 +1969,7 @@ body {
   z-index: 100;
 }
 
-.visibilite {
+.visibility {
   visibility: visible !important;
   opacity: 1 !important;
 }
@@ -2027,14 +2011,22 @@ body {
   height: 126px;
   object-fit: contain;
 }
-.gallery__swiper__wrapper {
-  width: 100%;
-}
 .gallery__swiper__slide {
   align-items: center;
   justify-content: center;
   width: fit-content;
 }
 .gallery__swiper__btn__prev {
-  z-index: 100;
+  height: 32px !important;
+  width: 32px !important;
+  top: auto !important;
+  left: 16px !important;
+  bottom: 67px !important;
+}
+.gallery__swiper__btn__next {
+  height: 32px !important;
+  width: 32px !important;
+  top: auto !important;
+  bottom: 67px !important;
+  right: 16px !important;
 }/*# sourceMappingURL=productPage.css.map */

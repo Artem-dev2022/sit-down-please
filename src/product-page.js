@@ -37,7 +37,6 @@ function closeAll(){
 }
 
 const oneClickBtn = document.querySelector('.content__right__btn');
-
 const formBtn = document.querySelector('.one-click__form__btn');
 const oneClickWindow = document.querySelector('.one-click');
 const windowThanks = document.querySelector('.window-thanks');
@@ -46,28 +45,27 @@ const closeBuy = document.querySelector('.close-buy');
 const closeThanks = document.querySelector('.close-thanks');
 
 oneClickBtn.addEventListener('click', function(){
-    oneClickWindow.classList.add('visibilite');
-    windowBuy.classList.add('visibilite');
+    oneClickWindow.classList.add('visibility');
+    windowBuy.classList.add('visibility');
 })
 
 formBtn.addEventListener('click', function(){
-
     if (validate.isValid) {
       closeAll();
-      windowBuy.classList.remove('visibilite');
-      windowThanks.classList.add('visibilite')
+      windowBuy.classList.remove('visibility');
+      windowThanks.classList.add('visibility')
     }
-    //validate.isValid ?  windowThanks.classList.add('visibilite') : null;
 })
 
 closeBuy.addEventListener('click', function(){
-    oneClickWindow.classList.remove('visibilite');
+    oneClickWindow.classList.remove('visibility');
+    windowBuy.classList.remove('visibility');
     closeAll();
 })
 
 closeThanks.addEventListener('click', function(){
-    oneClickWindow.classList.remove('visibilite');
-    windowThanks.classList.remove('visibilite');
+    oneClickWindow.classList.remove('visibility');
+    windowThanks.classList.remove('visibility');
     closeAll();
 })
 
@@ -129,25 +127,22 @@ const swiperGallery = new Swiper('.gallery__swiper', {
   },
   breakpoints: {
     1540: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       enabled: true
     },
-    // when window width is >= 1024px
     1024: {
       slidesPerView: 3,
       spaceBetween: 78,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 32,
+      spaceBetween: 39,
     },
     320: {
-      slidesPerGroup: 1,
       slidesPerView: 1
     }
   }
 });
-
 
 const mainImg = document.querySelector('.gallery__main');
 const images = document.querySelectorAll('.gallery__bar__img');
@@ -165,9 +160,9 @@ const closeGallery = document.querySelector('.gallery__close');
 const gallery = document.querySelector('.gallery');
 
 openGallery.addEventListener('click', function(){
-  gallery.classList.add('visibilite')
+  gallery.classList.add('visibility')
 })
 
 closeGallery.addEventListener('click', function(){
-  gallery.classList.remove('visibilite')
+  gallery.classList.remove('visibility')
 })
