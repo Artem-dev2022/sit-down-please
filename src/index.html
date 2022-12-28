@@ -65,9 +65,14 @@
                         </defs>
                     </svg>
                 </button>
+                <div class="gray-bg-on-burger"></div>
                 <img class="header__mid__logo logo" src="./img/logo.svg" alt="Лого">
                 <nav class="header__mid__nav">
                     <ul class="header__mid__list flex">
+                        <svg class="btn header__mid__close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4.57538" y="2.9541" width="24" height="3" rx="1.5" transform="rotate(45 4.57538 2.9541)" fill="#A65CF0"/>
+                            <rect x="21.546" y="5.0752" width="24" height="3" rx="1.5" transform="rotate(135 21.546 5.0752)" fill="#A65CF0"/>
+                        </svg>
                         <li class="header__mid__item"><a tabindex="6" class="header__mid__link" href="catalog.html">Каталог</a></li>
                         <li class="header__mid__item"><a tabindex="7" class="header__mid__link" href="#">Магазины</a></li>
                         <li class="header__mid__item"><a tabindex="8" class="header__mid__link" href="#">Шоу-рум</a></li>
@@ -627,11 +632,17 @@
             <div class="container flex">
                 <form id="form" method="POST" autocomplete="off" action="https://jsonplaceholder.typicode.com/posts" class="we-glad__form flex">
                     <div class="we-glad__title title">Мы всегда вам рады!</div>
-                    <p class="we-glad__form__text">Безусловно, новая модель организационной деятельности в значительной степени обусловливает важность распределения внутренних резервов и ресурсов.</p>
-                    <div class="tooltip">
-                        <div class="tooltip__icon"></div>
-                        <div class="tooltip__hint">Реплицированные с зарубежных источников, исследования формируют глобальную сеть.</div>
-                    </div>
+                    <p class="we-glad__form__text">Безусловно, новая модель организационной деятельности в значительной степени обусловливает важность распределения внутренних резервов и ресурсов.
+                        <svg class="tooltip" width="14" height="14" viewBox="0 0 14 14" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="tooltip__bg" viewBox="0 0 100 100">
+                                <ellipse cx="50" cy="50" rx="50" ry="50" fill="white"/>
+                            </svg>
+                            <path d="M7 1.27273C3.83691 1.27273 1.27273 3.83691 1.27273 7C1.27273 10.1631 3.83691 12.7273 7 12.7273C10.1631 12.7273 12.7273 10.1631 12.7273 7C12.7273 3.83691 10.1631 1.27273 7 1.27273ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z" fill="#FF862F"/>
+                            <svg class="tooltip__symbol" x="4.5" y="3" width="5" height="8" viewBox="0 0 5 8">
+                                <path d="M1.79261 1.4482C2.05188 1.29591 2.35657 1.24024 2.65296 1.29105C2.94886 1.34186 3.2179 1.49588 3.41126 1.72582C3.60462 1.95576 3.71057 2.24679 3.71009 2.54736V2.5483C3.71009 2.84684 3.47815 3.15808 3.03919 3.45064C2.83899 3.584 2.6344 3.68675 2.47718 3.75656C2.39954 3.79106 2.33606 3.81654 2.29309 3.83289L2.24573 3.85035L2.23548 3.85391C1.90247 3.96531 1.72278 4.32543 1.83362 4.65863C1.94495 4.99205 2.3053 5.17224 2.6388 5.0611L2.63196 5.03795L2.63977 5.06084L2.64075 5.06051L2.64319 5.05967L2.65003 5.05727L2.672 5.04953L2.74622 5.02224C2.80774 4.99881 2.89319 4.96464 2.99427 4.91959C3.19544 4.83031 3.4679 4.69442 3.74524 4.50961C4.26087 4.16587 4.98255 3.52275 4.98304 2.54888C4.98401 1.94788 4.7721 1.36597 4.38489 0.906185C3.99768 0.446304 3.46057 0.138271 2.8678 0.0366442C2.27552 -0.0649822 1.66614 0.0463573 1.14807 0.350941C0.62952 0.655524 0.235966 1.1337 0.0362586 1.70077C-0.0804407 2.03231 0.0938757 2.39562 0.425419 2.51224C0.756962 2.62887 1.12024 2.45465 1.23694 2.12311C1.33655 1.83958 1.53382 1.60049 1.79261 1.4482ZM3.12513 7.00285C3.12513 7.35431 2.83997 7.63922 2.48841 7.63922C2.13684 7.63922 1.85218 7.35431 1.85218 7.00285C1.85218 6.6514 2.13684 6.36649 2.48841 6.36649C2.83997 6.36649 3.12513 6.6514 3.12513 7.00285Z" fill="#FF862F"/>
+                            </svg>
+                        </svg>
+                    </p>
                     <div class="we-glad__form__field flex">
                         <input tabindex="0" id="name" name="name" required class="we-glad__form__input" type="text" placeholder="Как вас зовут?">
                     </div>
@@ -655,9 +666,7 @@
                     <source class="we-glad__img" srcset="./img/we-glad-768.png" media="(min-width: 768px)">
                     <img class="we-glad__img" src="./img/we-glad.png" alt="мебель">
                 </picture>
-                
             </div>
-
         </section>
     </main>
 
@@ -727,6 +736,10 @@
     <script src="https://unpkg.com/inputmask@5.0.8-beta.7/dist/inputmask.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
     <script src="./script.js"></script>
     <script src="./header-footer.js"></script>
     

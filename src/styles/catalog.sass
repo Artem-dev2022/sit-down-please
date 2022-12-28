@@ -86,9 +86,10 @@ $bone: #FFF5D1
                 font-size: 16px
                 line-height: 22px
         &__checkbox
-            display: none
+            opacity: 0
             &__item
                 margin-bottom: 12px
+                transform: translateX(-11px)
                 p
                     padding-top: 2px
         &__checkbox + .check
@@ -293,3 +294,6 @@ $bone: #FFF5D1
 
 .active-card
     display: flex !important
+
+.catalog__filter__checkbox:focus + .check
+    background-color: $primary-light

@@ -566,38 +566,23 @@
 }
 
 .tooltip {
-  position: absolute;
-  top: 60px;
-  right: 105px;
-}
-.tooltip__icon {
-  position: absolute;
   transform: translateY(2px);
-  cursor: pointer;
-  width: 14px;
-  height: 14px;
-  background-image: url("../../img/tooltip.svg");
   transition: all 0.3s ease;
 }
-.tooltip__hint {
-  position: absolute;
-  bottom: 2px;
-  left: -71px;
-  padding: 5px;
-  width: 157px;
-  height: 60px;
-  color: #FFFFFF;
-  background-image: url("../../img/hint.svg");
+
+.tooltip:hover .tooltip__bg ellipse {
+  fill: #FF862F;
+}
+
+.tooltip:hover .tooltip__symbol path {
+  fill: #FFFFFF;
+}
+
+.tippy-box[data-theme~=tippy-style] {
+  width: 160px;
+  border-radius: 0px;
   font-weight: 400;
   font-size: 9px;
   line-height: 14px;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.tooltip__icon:hover + .tooltip__hint {
-  opacity: 1;
-}
-.tooltip__icon:hover {
-  background-image: url("../../img/tooltip-hover.svg");
 }/*# sourceMappingURL=style.css.map */

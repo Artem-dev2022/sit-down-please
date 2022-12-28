@@ -115,7 +115,22 @@
     .header__top__left
         width: 624px
     .header__mid__nav
-        display: none
+        position: fixed
+        top: 0
+        left: -100vw
+        padding: 50px
+        transition: all 0.5s ease-in-out
+        background-color: #FFFFFF
+        height: 100vh !important
+        width: 30vw !important
+        z-index: 1000
+    .header__mid__list
+        flex-direction: column
+    .header__mid__close
+        display: block
+        margin-bottom: 20px
+    .header__mid__link
+        padding: 0
     .header__mid .container
         justify-content: flex-start !important
         align-items:  center !important
@@ -204,6 +219,9 @@
         position: absolute
         top: 156px
         transform: translateX(4px)
+    .header__mid__nav
+        padding: 50px 10px !important
+        width: 70vw !important
     .header__bottom__left
         flex-direction: column !important
     .header__bottom__right

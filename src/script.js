@@ -121,3 +121,12 @@ validate
 const highRaitingBtn = document.querySelector('.high-raiting__btn');
 
 highRaitingBtn.addEventListener('click', () => window.location.href = 'catalog.html');
+
+/// tippy js tooltip \\\
+
+tippy('.tooltip', {
+  theme: 'tippy-style',
+  allowHTML: true,
+  content: 'Реплицированные&nbsp;с&nbsp;зарубежных источников, исследования формируют глобальную сеть.',
+ 
+});

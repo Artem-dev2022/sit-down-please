@@ -147,6 +147,7 @@ input {
   line-height: 130%;
   color: #333333;
   margin-bottom: 11px;
+  cursor: pointer;
 }
 .header__top__region .region-dropdown-visibility {
   opacity: 1;
@@ -242,6 +243,10 @@ input {
   background-color: transparent;
 }
 .header__mid__burger {
+  display: none;
+  height: 24px;
+}
+.header__mid__close {
   display: none;
   height: 24px;
 }
@@ -360,6 +365,7 @@ input {
   line-height: 130%;
   color: #333333;
   margin-bottom: 11px;
+  cursor: pointer;
 }
 .header__bottom__right {
   align-items: center;
@@ -413,6 +419,28 @@ input {
 }
 .header__bottom__right__icon:active::before {
   opacity: 0;
+}
+
+.burger-open {
+  left: 0 !important;
+}
+
+.gray-bg-on-burger {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
+  transition: all 1s ease;
+}
+
+.gray-bg-on-burger-active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .footer__top {
@@ -951,7 +979,25 @@ body {
     width: 624px;
   }
   .header__mid__nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    padding: 50px;
+    transition: all 0.5s ease-in-out;
+    background-color: #FFFFFF;
+    height: 100vh !important;
+    width: 30vw !important;
+    z-index: 1000;
+  }
+  .header__mid__list {
+    flex-direction: column;
+  }
+  .header__mid__close {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .header__mid__link {
+    padding: 0;
   }
   .header__mid .container {
     justify-content: flex-start !important;
@@ -1072,6 +1118,10 @@ body {
     position: absolute;
     top: 156px;
     transform: translateX(4px);
+  }
+  .header__mid__nav {
+    padding: 50px 10px !important;
+    width: 70vw !important;
   }
   .header__bottom__left {
     flex-direction: column !important;
@@ -1571,10 +1621,11 @@ body {
   line-height: 22px;
 }
 .catalog__filter__checkbox {
-  display: none;
+  opacity: 0;
 }
 .catalog__filter__checkbox__item {
   margin-bottom: 12px;
+  transform: translateX(-11px);
 }
 .catalog__filter__checkbox__item p {
   padding-top: 2px;
@@ -1827,4 +1878,8 @@ body {
 
 .active-card {
   display: flex !important;
+}
+
+.catalog__filter__checkbox:focus + .check {
+  background-color: #C998FB;
 }/*# sourceMappingURL=catalog.css.map */
