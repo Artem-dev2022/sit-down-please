@@ -1,3 +1,7 @@
+.container {
+  width: 1280px !important;
+}
+
 .hero {
   margin-bottom: 70px;
 }
@@ -11,17 +15,17 @@
   height: 100%;
 }
 .hero .swiper-pagination {
-  bottom: 23px !important;
+  bottom: 23px;
 }
 .hero .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
-  margin: 0 !important;
-  margin-right: 16px !important;
+  margin: 0;
+  margin-right: 16px;
 }
 .hero .swiper-pagination-bullet:last-child {
-  margin: 0 !important;
-  margin-right: 0 !important;
+  margin: 0;
+  margin-right: 0;
 }
 .hero .swiper-pagination-bullet-active {
   background-color: #333333;
@@ -82,7 +86,7 @@
   background-image: url("../../img/sale.svg");
   font-weight: 700;
   font-size: 14px;
-  padding: 10px 21px;
+  padding: 10px 0px 10px 22px;
   color: #FFFFFF;
 }
 .special__slide__img {
@@ -146,7 +150,7 @@
   width: 296px !important;
 }
 .special__slide__main {
-  width: 624px;
+  width: 624px !important;
 }
 .special__buttons {
   justify-content: space-between;
@@ -237,7 +241,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 67px;
 }
 .oxford__img {
   margin: 0 auto;
@@ -363,6 +367,11 @@
   grid-area: bottom-right;
   height: 405px;
   background-image: url("../../img/chair.png");
+  background-size: 303px;
+  background-position: -31px 108px;
+}
+.top-categories .t-c-c-5 .top-categories__card__item {
+  margin-right: 43px;
 }
 
 .useful {

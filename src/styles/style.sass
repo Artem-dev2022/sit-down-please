@@ -18,7 +18,8 @@ $black: #333333
 $background-20: rgba(0, 0, 0, 0.2)
 $lime-color: #DAFFD1
 $bone: #FFF5D1
-
+.container
+    width: 1280px !important
 .hero
     margin-bottom: 70px
     .swiper 
@@ -29,15 +30,15 @@ $bone: #FFF5D1
         position: relative
         height: 100%
     .swiper-pagination
-        bottom: 23px !important
+        bottom: 23px
     .swiper-pagination-bullet
         width: 14px
         height: 14px
-        margin: 0 !important
-        margin-right: 16px !important
+        margin: 0
+        margin-right: 16px
     .swiper-pagination-bullet:last-child
-        margin: 0 !important
-        margin-right: 0 !important
+        margin: 0
+        margin-right: 0
     .swiper-pagination-bullet-active
         background-color: $black
     .content
@@ -85,7 +86,7 @@ $bone: #FFF5D1
             background-image: url("../../img/sale.svg")
             font-weight: 700
             font-size: 14px
-            padding: 10px 21px
+            padding: 10px 0px 10px 22px
             color: $white
         &__img
             align-self: center
@@ -135,7 +136,7 @@ $bone: #FFF5D1
         &__secondary
             width: 296px !important
         &__main
-            width: 624px 
+            width: 624px !important
     &__buttons
         justify-content: space-between
         width: 77px
@@ -211,7 +212,7 @@ $bone: #FFF5D1
     flex-direction: column
     align-items: center
     position: relative
-    margin-bottom: 70px
+    margin-bottom: 67px
     &__img
         margin: 0 auto
     .container
@@ -312,6 +313,10 @@ $bone: #FFF5D1
         grid-area: bottom-right
         height: 405px
         background-image: url('../../img/chair.png')
+        background-size: 303px
+        background-position: -31px 108px
+        .top-categories__card__item
+            margin-right: 43px
 
 .useful
     margin-bottom: 70px

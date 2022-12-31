@@ -29,6 +29,9 @@ $background-20: rgba(0, 0, 0, 0.2)
 $lime-color: #DAFFD1
 $bone: #FFF5D1
 
+.container
+    width: 1280px
+
 .header
     margin-bottom: 23px
     &__bottom__category
@@ -41,7 +44,7 @@ $bone: #FFF5D1
         justify-content: space-between
         width: 296px
         margin-right: 32px
-        padding-bottom: 63px
+        padding-bottom: 65px
         z-index: 100
         &__title
             font-weight: 400
@@ -58,14 +61,13 @@ $bone: #FFF5D1
         &__list
             flex-direction: column
         &__item
-            margin-bottom: 18px
             z-index: 100
             &__title
                 font-weight: 600
                 font-size: 16px
                 line-height: 130%
                 color: $grey-shade
-                margin-bottom: 6px
+                margin-bottom: 11px
             &__btn
                 display: none
                 position: absolute
@@ -81,6 +83,7 @@ $bone: #FFF5D1
                 cursor: pointer
                 z-index: 2
             &__dropdown
+                position: static
             &__name
                 font-weight: 400
                 font-size: 16px
@@ -91,7 +94,9 @@ $bone: #FFF5D1
                 margin-bottom: 12px
                 transform: translateX(-11px)
                 p
-                    padding-top: 2px
+                    line-height: 20px
+            &__item:last-child
+                margin-bottom: 0
         &__checkbox + .check
             position: relative
             width: 20px
@@ -167,8 +172,10 @@ $bone: #FFF5D1
             &__link:active svg circle
                 fill: $primary-shade
                 stroke: $primary-shade
+        .category
+            margin-bottom: 28px
         .price
-            margin-bottom: 35px
+            margin-bottom: 37px
             &__title
                 margin-bottom: 4px
             &__text
@@ -239,6 +246,8 @@ $bone: #FFF5D1
             .noUi-handle::before,
             .noUi-handle::after
                 display: none
+        .discount
+            margin-bottom: 26px
     &__products
         flex-direction: column
         &__title
@@ -297,3 +306,4 @@ $bone: #FFF5D1
 
 .catalog__filter__checkbox:focus + .check
     background-color: $primary-light
+
