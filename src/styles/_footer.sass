@@ -33,6 +33,7 @@ $bone: #FFF5D1
                 a:not(:last-child)
                     margin-right: 20px
         &__right
+            margin-right: -10px
             &__list:not(:last-child)
                 margin-right: 0px
             &__item
@@ -43,16 +44,28 @@ $bone: #FFF5D1
             &__item:not(:last-child)
                 margin-bottom: 8px
             .main
+                padding: 0 10px
                 color: $black
                 font-size: 16px
                 line-height: 150%
                 margin-bottom: 5px
+            &__link
+                padding: 0 10px
+                transition: all 0.3s ease
+            &__link:focus
+                background-color: $primary-light
+                color: $primary-shade
+            &__link:hover
+                color: $primary
+            &__link:active
+                color: $primary-shade
+                background-color: transparent
     .f-t-r-l-1
-        margin-right: 112px
+        margin-right: 94px
     .f-t-r-l-2
-        margin-right: 132px
+        margin-right: 112px
     .f-t-r-l-3
-        margin-right: 145px
+        margin-right: 126px
     &__bottom
         padding: 5px 0
         height: 30px
@@ -68,6 +81,7 @@ $bone: #FFF5D1
         width: 30px
         height: 30px
         position: relative
+    .soc-icon svg path
         transition: all 0.3s ease
     .soc-icon::before
         content: ""
@@ -80,6 +94,7 @@ $bone: #FFF5D1
         background-color: $primary-light
         opacity: 0
         z-index: 1
+        transition: all 0.3s ease
     .soc-icon svg
         position: absolute
         z-index: 10

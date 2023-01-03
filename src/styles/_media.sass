@@ -1,4 +1,4 @@
-@media (max-width: 1938px)
+@media (max-width: 1919px)
     .container
         width: 952px !important
     .header__top
@@ -27,12 +27,17 @@
     .header__bottom__search,
     .header__bottom__search__input
         width: 652px
-    .hero__slide__img
-        width: fit-content !important
+    .hero
+        &__slide
+            max-width: 1024px !important
+            &__img
+                width: 100% !important
+        &__content
+            max-width: 952px !important
     .swiper
-        width: 1024px !important
+        max-width: 1024px !important
     .swiper-slide
-        width: 1024px !important
+        max-width: 1024px !important
     .special__swiper,
     .special__swiper-wrapper
         width: 952px !important
@@ -43,19 +48,26 @@
         display: none
     .special__slide__title
         margin-bottom: 19px !important
+    .s-s-2,
+    .s-s-5
+        padding-top: 112px !important
     .s-s-img-2,
     .s-s-img-5
         width: 254px !important
         height: 138px !important
         margin-bottom: 48px !important
+        margin-left: -10px !important
     .high-raiting__card:nth-child(7),
     .high-raiting__card:nth-child(8)
         display: none
     .high-raiting__block
         grid-template-columns: repeat(3, 1fr) !important
     .oxford
+        max-width: 1024px !important
         height: 600px !important
         margin-bottom: 70px !important
+        &__img
+            width: 100% !important
     .top-categories__block
         grid-template-columns: repeat(3, 1fr) !important
         grid-template-areas: "top-left top-left bottom-left" "bottom-mid top-right bottom-right" !important
@@ -100,13 +112,15 @@
         top: 97px !important
         right: 322px !important
     .f-t-r-l-1
-        margin-right: 75px !important
+        margin-right: 56px !important
     .f-t-r-l-2
-        margin-right: 95px !important
+        margin-right: 75px !important
     .f-t-r-l-3
-        margin-right: 110px !important
+        margin-right: 90px !important
+    .f-t-r-l-4
+        //margin-right: 10px !important
 
-@media (max-width: 1041px)
+@media (max-width: 1023px)
     .container
         width: 624px !important
     .header__top__left
@@ -151,13 +165,16 @@
     .header__mid__burger
         display: block !important
         margin-right: 194px
-    .hero__swiper,
-    .hero__slide
-        width: 768px !important
+    .hero
+        &__slide
+            max-width: 767px !important
+        &__content
+            max-width: 622px !important
     .special__swiper
         width: 624px !important
     .high-raiting__block
         grid-template-columns: repeat(2, 1fr) !important
+        margin-bottom: 31px !important
     .top-categories__block
         grid-template-columns: repeat(2, 1fr) !important
         grid-template-areas: "top-left top-left" "bottom-left top-right" "bottom-mid  bottom-right" !important
@@ -176,14 +193,18 @@
         padding: 25px 0 !important
     .footer__top .container
         flex-direction: column !important
+    .footer__top__right
+        margin-left: -10px !important
     .footer__top__left
         flex-direction: row !important
         margin-bottom: 22px
     .f-t-r-l-1
-        margin-right: 40px !important
+        margin-right: 20px !important
     .f-t-r-l-2
-        margin-right: 58px !important
+        margin-right: 37px !important
     .f-t-r-l-3
+        margin-right: 53px !important
+    .f-t-r-l-4
         margin-right: 72px !important
 
 @media (max-width: 767px)
@@ -264,9 +285,12 @@
     .title
         width: 296px
         font-size: 24px !important
+    .special__slide
+        height: auto !important
+        min-height: 511px !important
     .special__swiper
         width: 296px !important
-        height: 633px !important
+        min-height: 633px !important
     .special__buttons
         position: absolute
         bottom: 0
@@ -275,10 +299,31 @@
         margin: 0 auto
     .high-raiting__block
         gap: 16px !important
-    .high-raiting__card
-        padding: 16px !important
-        width: 140px !important
-        height: 278px !important
+    .high-raiting
+        &__card
+            padding: 16px !important
+            width: 140px !important
+            height: 278px !important
+            background-size: 108px !important
+            min-height: 278px !important
+            &__info
+                padding-top: 75px !important
+        .h-r-c-1
+            background-position: center 52px
+        .h-r-c-2
+            background-position: center 48px
+        .h-r-c-3
+            background-position: center 48px
+        .h-r-c-4
+            background-position: center 43px
+        .h-r-c-5
+            background-position: center 46px
+        .h-r-c-6
+            background-position: center 47px
+        .h-r-c-7
+            background-position: center 58px
+        .h-r-c-8
+            background-position: center 64px
     .high-raiting__card__title
         font-size: 16px !important
         margin-bottom: 16px !important
@@ -288,12 +333,14 @@
         width: 108px !important
         height: 40px !important
     .high-raiting__card__img
-        width: 108px
+        width: 108px !important
         bottom: 188px !important
     .high-raiting__card__raiting
-        background-size: 12px
+        font-size: 12px !important
     .oxford
         height: 302px !important
+        &__img
+            height: 210px !important
     .oxford__container
         padding: 30px 0 !important
     .oxford__title
@@ -413,8 +460,10 @@
         flex-wrap: wrap
         height: 221px !important
     .f-t-r-l-1
-        margin-right: 70px !important
+        margin-right: 53px !important
     .f-t-r-l-2
         margin-right: 0px !important
     .f-t-r-l-3
-        margin-right: 48px !important
+        margin-right: 27px !important
+    .f-t-r-l-4
+        margin-right: 0px !important
