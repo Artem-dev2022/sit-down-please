@@ -370,12 +370,14 @@ $bone: #FFF5D1
 .useful
     margin-bottom: 70px
     &__swiper
-        height: 734px
+        height: auto !important
+        min-height: 734px !important
         &__head
             justify-content: space-between
             margin-bottom: 26px
         .swiper-wrapper
-            height: 676px
+            height: auto !important
+            min-height: 676px !important
     &__title
         margin: 0
     &__buttons
@@ -384,16 +386,18 @@ $bone: #FFF5D1
         height: 32px
     &__slide
         flex-direction: column
-        justify-content: flex-end
         width: 624px
-        height: 676px
+        height: auto !important
+        min-height: 676px !important
         background-color: $grey-light
         border-radius: 10px
     &__content
         flex-direction: column
         justify-content: space-between
         padding: 30px
-        height: 250px
+        padding-top: 456px
+        height: 100%
+        min-height: 250px !important
     &__text
         font-weight: 400
         font-size: 24px

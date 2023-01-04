@@ -444,14 +444,16 @@
   --swiper-navigation-size: 0;
 }
 .useful__swiper {
-  height: 734px;
+  height: auto !important;
+  min-height: 734px !important;
 }
 .useful__swiper__head {
   justify-content: space-between;
   margin-bottom: 26px;
 }
 .useful__swiper .swiper-wrapper {
-  height: 676px;
+  height: auto !important;
+  min-height: 676px !important;
 }
 .useful__title {
   margin: 0;
@@ -463,9 +465,9 @@
 }
 .useful__slide {
   flex-direction: column;
-  justify-content: flex-end;
   width: 624px;
-  height: 676px;
+  height: auto !important;
+  min-height: 676px !important;
   background-color: #F7F7F7;
   border-radius: 10px;
 }
@@ -473,7 +475,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
-  height: 250px;
+  padding-top: 456px;
+  height: 100%;
+  min-height: 250px !important;
 }
 .useful__text {
   font-weight: 400;
