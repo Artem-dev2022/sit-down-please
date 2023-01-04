@@ -565,7 +565,7 @@ input {
   justify-content: space-between;
   position: relative;
   padding: 30px 30px 32px 30px;
-  height: 420px;
+  min-height: 420px;
   width: 296px;
   border-radius: 10px;
   background-color: #F7F7F7;
@@ -586,6 +586,12 @@ input {
   bottom: 232px;
   margin: 0 auto;
 }
+.card__info {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 156px;
+}
 .card__title {
   color: #333333;
   font-weight: 400;
@@ -604,11 +610,102 @@ input {
   width: 296px;
 }
 
+.c-1 {
+  background-image: url("../../img/R-94.png");
+  background-position: center 108px;
+}
+
+.c-2 {
+  background-image: url("../../img/T-75.png");
+  background-position: center 89px;
+}
+
+.c-3 {
+  background-image: url("../../img/D-31.png");
+  background-position: center 87px;
+}
+
+.c-4 {
+  background-image: url("../../img/Y-68.png");
+  background-position: center 65px;
+}
+
+.c-5 {
+  background-image: url("../../img/W-95.png");
+  background-position: center 73px;
+}
+
+.c-6 {
+  background-image: url("../../img/G-41.png");
+  background-position: center 74px;
+}
+
+.c-7 {
+  background-image: url("../../img/V-43.png");
+  background-position: center 60px;
+}
+
+.c-8 {
+  background-image: url("../../img/S-99.png");
+  background-position: center 67px;
+}
+
+.c-9 {
+  background-image: url("../../img/f-85.png");
+  background-position: center 65px;
+}
+
+.c-10 {
+  background-image: url("../../img/h-64.png");
+  background-position: center 62px;
+}
+
+.c-11 {
+  background-image: url("../../img/h-58.png");
+  background-position: center 59px;
+}
+
+.c-12 {
+  background-image: url("../../img/r-43.png");
+  background-position: center 87px;
+}
+
+.c-13 {
+  background-image: url("../../img/c-42.png");
+  background-position: center 65px;
+}
+
+.c-14 {
+  background-image: url("../../img/u-58.png");
+  background-position: center 100px;
+}
+
+.c-15 {
+  background-image: url("../../img/f-41.png");
+  background-position: center 86px;
+}
+
+.c-16 {
+  background-image: url("../../img/r-85.png");
+  background-position: center 87px;
+}
+
+.c-17 {
+  background-image: url("../../img/s-44.png");
+  background-position: center 87px;
+}
+
+.c-18 {
+  background-image: url("../../img/c-80.png");
+  background-position: center 62px;
+}
+
 @media (max-width: 767px) {
   .card {
     padding: 16px !important;
     width: 140px !important;
-    height: 278px !important;
+    min-height: 278px !important;
+    background-size: 108px !important;
   }
   .card a {
     height: auto !important;
@@ -620,6 +717,9 @@ input {
     width: 108px !important;
     bottom: 191px !important;
   }
+  .card__info {
+    padding-top: 77px !important;
+  }
   .card__title {
     font-size: 16px !important;
     margin-bottom: 16px !important;
@@ -630,6 +730,60 @@ input {
   .card__btn {
     width: 108px !important;
     height: 40px !important;
+  }
+  .c-1 {
+    background-position: center 50px;
+  }
+  .c-2 {
+    background-position: center 45px;
+  }
+  .c-3 {
+    background-position: center 45px;
+  }
+  .c-4 {
+    background-position: center 45px;
+  }
+  .c-5 {
+    background-position: center 45px;
+  }
+  .c-6 {
+    background-position: center 45px;
+  }
+  .c-7 {
+    background-position: center 45px;
+  }
+  .c-8 {
+    background-position: center 45px;
+  }
+  .c-9 {
+    background-position: center 45px;
+  }
+  .c-10 {
+    background-position: center 45px;
+  }
+  .c-11 {
+    background-position: center 40px;
+  }
+  .c-12 {
+    background-position: center 45px;
+  }
+  .c-13 {
+    background-position: center 45px;
+  }
+  .c-14 {
+    background-position: center 45px;
+  }
+  .c-15 {
+    background-position: center 45px;
+  }
+  .c-16 {
+    background-position: center 47px;
+  }
+  .c-17 {
+    background-position: center 45px;
+  }
+  .c-18 {
+    background-position: center 45px;
   }
 }
 * {
@@ -1934,7 +2088,7 @@ body {
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 .catalog__products__pagination {
   width: fit-content;

@@ -1,20 +1,21 @@
 const swiperSimilar = new Swiper('.similar__swiper', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.similar__buttons__next',
+      prevEl: '.similar__buttons__prev',
     },
-    spaceBetween: 32,
-    slidesPerView: 4,
     slidesPerGroup: 1,
     breakpoints: {
-      1540: {
-        slidesPerView: 4
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 32
       },
       // when window width is >= 1024px
       1024: {
-        slidesPerView: 3
+        slidesPerView: 3,
+        spaceBetween: 32
       },
       768: {
+        slidesPerView: 2,
         spaceBetween: 32
       },
       320: {
@@ -23,7 +24,6 @@ const swiperSimilar = new Swiper('.similar__swiper', {
       }
     }
 });
-
 ///modal window\\\
 const inputName = document.querySelector('#name')
 const inputTel = document.querySelector('#tel')
@@ -122,11 +122,11 @@ validate
 ///gallery\\\
 const swiperGallery = new Swiper('.gallery__swiper', {
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.gallery__swiper__btn__next',
+    prevEl: '.gallery__swiper__btn__prev',
   },
   breakpoints: {
-    1540: {
+    1920: {
       slidesPerView: 4,
       enabled: true
     },
