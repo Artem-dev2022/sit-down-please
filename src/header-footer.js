@@ -41,31 +41,22 @@ document.addEventListener('click', function(e){
   e.target !== categoryBtn ? e.target !== categoryDropdown ? (categoryDropdown.classList.remove('category-dropdown-visibility'), categoryArrow.classList.remove('category-dropdown-rotate')) : null : null
 })
 ///burger menu\\\
-const body = document.querySelector('body');
 const burger = document.querySelector('.header__mid__burger');
 const burgerClose = document.querySelector('.header__mid__close');
 const menu = document.querySelector('.header__mid__nav');
+const menuTop = document.querySelector('.header__top__nav');
 const list = document.querySelector('.header__mid__list');
-const grayBg = document.querySelector('.gray-bg-on-burger');
 
 burger.addEventListener('click', function(){
   menu.classList.add('burger-open')
   list.classList.add('list-transform')
-  body.style.overflow = 'hidden'
-  grayBg.classList.add('gray-bg-on-burger-active')
+  if (window.screen.width < 768) {
+    menuTop.classList.add('header__top__nav-active')
+  }
 })
-
-function hideBurgerMenu(){
-  menu.classList.remove('burger-open')
-  list.classList.remove('list-transform')
-  body.style.overflow = 'auto'
-  grayBg.classList.remove('gray-bg-on-burger-active')
-}
 
 burgerClose.addEventListener('click', function(){
-  hideBurgerMenu();
-})
-
-grayBg.addEventListener('click', function(){
-  hideBurgerMenu();
+  menu.classList.remove('burger-open')
+  menuTop.classList.remove('header__top__nav-active')
+  list.classList.remove('list-transform')
 })
