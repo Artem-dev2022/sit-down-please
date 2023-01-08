@@ -95,6 +95,8 @@ $bone: #FFF5D1
                 transform: translateX(-11px)
                 p
                     line-height: 20px
+                    text-overflow: ellipsis
+                    overflow: hidden
             &__item:last-child
                 margin-bottom: 0
         &__checkbox + .check
@@ -307,3 +309,6 @@ $bone: #FFF5D1
 .catalog__filter__checkbox:focus + .check
     background-color: $primary-light
 
+.filter__dropdown__hidden
+    visibility: visible
+    opacity: 1

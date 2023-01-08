@@ -768,32 +768,34 @@ body {
   margin-bottom: 70px;
 }
 .hero__slide {
-  max-width: 1920px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .hero__slide__img {
   width: 100%;
   height: 400px;
+  object-fit: cover;
+  object-position: left top;
 }
 .hero .swiper {
-  max-width: 1920px;
+  width: calc(100vw - 20px);
   height: 400px;
   margin: 0 auto;
 }
-.hero .swiper-slide {
-  position: relative;
-  height: 100%;
-}
 .hero .swiper-pagination {
-  bottom: 23px !important;
+  right: 0;
+  left: 0;
+  bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 74px;
+  margin: 0 auto;
 }
 .hero .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
-  margin: 0 !important;
-  margin-right: 16px !important;
-}
-.hero .swiper-pagination-bullet:last-child {
-  margin-right: 0 !important;
+  margin: 0px !important;
 }
 .hero .swiper-pagination-bullet-active {
   background-color: #333333;
@@ -828,7 +830,6 @@ body {
 }
 .special__swiper {
   min-height: 569px;
-  padding-top: 58px;
 }
 .special__swiper__head {
   justify-content: space-between;
@@ -1064,16 +1065,15 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
-  margin-bottom: 67px;
-}
-.oxford__img {
-  width: 100%;
+  width: calc(100vw - 20px);
   height: 600px;
   margin: 0 auto;
+  margin-bottom: 70px;
+  background-image: url("../../img/oxford1950.jpg");
+  background-size: cover;
+  background-position: center top;
 }
-.oxford .container {
+.oxford__container {
   position: absolute;
   top: 0;
   flex-direction: column;
@@ -1205,16 +1205,11 @@ body {
   margin-bottom: 70px;
   --swiper-navigation-size: 0;
 }
-.useful__swiper {
-  height: auto !important;
-  min-height: 734px !important;
-}
 .useful__swiper__head {
   justify-content: space-between;
   margin-bottom: 26px;
 }
-.useful__swiper .swiper-wrapper {
-  height: auto !important;
+.useful__wrapper {
   min-height: 676px !important;
 }
 .useful__title {
@@ -1235,7 +1230,6 @@ body {
 }
 .useful__content {
   flex-direction: column;
-  justify-content: space-between;
   padding: 30px;
   padding-top: 456px;
   height: 100%;
@@ -1246,6 +1240,10 @@ body {
   font-size: 24px;
   line-height: 33px;
   color: #333333;
+  margin-bottom: 38px;
+}
+.useful__btn {
+  margin-top: auto;
 }
 .useful .u-s-1 {
   background-image: url("../../img/useful-1.jpg");
@@ -1302,7 +1300,7 @@ body {
 .we-glad__form__text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   color: #666666;
   margin-bottom: 16px;
 }
@@ -1467,20 +1465,8 @@ body {
 .header__bottom__search__input {
     width: 652px;
   }
-  .hero__slide {
-    max-width: 1024px !important;
-  }
-  .hero__slide__img {
-    width: 100% !important;
-  }
   .hero__content {
     max-width: 952px !important;
-  }
-  .swiper {
-    max-width: 1024px !important;
-  }
-  .swiper-slide {
-    max-width: 1024px !important;
   }
   .special__swiper,
 .special__swiper-wrapper {
@@ -1514,14 +1500,6 @@ body {
   .high-raiting__block {
     grid-template-columns: repeat(3, 1fr) !important;
   }
-  .oxford {
-    max-width: 1024px !important;
-    height: 600px !important;
-    margin-bottom: 70px !important;
-  }
-  .oxford__img {
-    width: 100% !important;
-  }
   .top-categories__block {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-template-areas: "top-left top-left bottom-left" "bottom-mid top-right bottom-right" !important;
@@ -1549,28 +1527,38 @@ body {
     background-position: -161px 107px !important;
     background-size: 449px !important;
   }
+  .oxford {
+    background-image: url("../../img/oxford-1024.jpg");
+  }
   .useful__swiper {
     width: 952px !important;
     height: fit-content !important;
   }
   .useful__wrapper {
-    height: 456px !important;
+    min-height: 456px !important;
   }
   .useful__slide {
     width: 296px !important;
-    height: 456px !important;
+    min-height: 456px !important;
     background-size: 100% 202px !important;
   }
   .useful__content {
     width: 296px;
-    height: 254px !important;
+    padding-top: 232px !important;
   }
   .useful__text {
     font-size: 16px !important;
     line-height: 22px !important;
+    margin-bottom: 30px !important;
+  }
+  .we-glad {
+    margin-bottom: 70px !important;
   }
   .we-glad__form {
     width: 405px !important;
+  }
+  .we-glad__form__text {
+    margin-bottom: 14px !important;
   }
   .we-glad__img {
     width: 514px !important;
@@ -1665,8 +1653,8 @@ body {
     display: block !important;
     margin-right: 194px;
   }
-  .hero__slide {
-    max-width: 767px !important;
+  .hero__swiper {
+    width: 100vw !important;
   }
   .hero__content {
     max-width: 622px !important;
@@ -1682,6 +1670,10 @@ body {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-areas: "top-left top-left" "bottom-left top-right" "bottom-mid  bottom-right" !important;
   }
+  .oxford {
+    width: 100vw;
+    background-image: url("../../img/oxford-768.jpg");
+  }
   .oxford__container {
     width: 696px !important;
   }
@@ -1695,8 +1687,8 @@ body {
     width: 187px !important;
     height: 444px !important;
   }
-  .we-glad__form__input:last-child {
-    margin-bottom: 31px;
+  .we-glad__form__input {
+    margin-bottom: 30px;
   }
   .footer__top {
     padding: 25px 0 !important;
@@ -1844,7 +1836,10 @@ body {
   }
   .hero__swiper,
 .hero__slide {
-    width: 320px !important;
+    height: 210px !important;
+  }
+  .hero__slide__img {
+    object-position: center;
     height: 210px !important;
   }
   .hero__content {
@@ -1858,11 +1853,9 @@ body {
     display: none;
   }
   .swiper-pagination {
-    bottom: 16px !important;
-  }
-  .swiper-pagination-bullets {
+    bottom: 11px !important;
+    width: 34px !important;
     height: 6px;
-    bottom: 19px !important;
   }
   .swiper-pagination-bullet {
     width: 6px !important;
@@ -1885,6 +1878,7 @@ body {
   .special__swiper {
     width: 296px !important;
     min-height: 633px !important;
+    padding-bottom: 48px;
   }
   .special__buttons {
     position: absolute;
@@ -1899,7 +1893,6 @@ body {
   .high-raiting__card {
     padding: 16px !important;
     width: 140px !important;
-    height: 278px !important;
     background-size: 108px !important;
     min-height: 278px !important;
   }
@@ -1949,10 +1942,10 @@ body {
     font-size: 12px !important;
   }
   .oxford {
+    background-image: url("../../img/oxford-320.jpg");
+    background-size: 100% 210px;
     height: 302px !important;
-  }
-  .oxford__img {
-    height: 210px !important;
+    margin-bottom: 70px;
   }
   .oxford__container {
     padding: 30px 0 !important;
@@ -1972,7 +1965,7 @@ body {
     width: 296px !important;
   }
   .top-categories {
-    margin-bottom: 76px !important;
+    margin-bottom: 79px !important;
   }
   .top-categories__block {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -2066,9 +2059,12 @@ body {
     top: 48px !important;
     left: 75px !important;
   }
+  .useful {
+    margin-bottom: 70px !important;
+  }
   .useful__swiper {
     width: 296px !important;
-    height: 557px !important;
+    padding-bottom: 48px;
   }
   .useful__buttons {
     position: absolute;
@@ -2086,6 +2082,7 @@ body {
   }
   .we-glad__form__text {
     margin-bottom: 14px !important;
+    line-height: 19px !important;
   }
   .we-glad__form__field p {
     font-size: 12px;
@@ -2145,7 +2142,7 @@ body {
     margin-bottom: 16px !important;
   }
   .card__price {
-    margin-bottom: 16px !important;
+    margin-bottom: 14px !important;
   }
   .card__btn {
     width: 108px !important;

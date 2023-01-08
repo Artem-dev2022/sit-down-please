@@ -65,21 +65,22 @@
                         </defs>
                     </svg>
                 </button>
-                <div class="gray-bg-on-burger"></div>
                 <img class="header__mid__logo logo" src="./img/logo.svg" alt="Лого">
                 <nav class="header__mid__nav">
-                    <ul class="header__mid__list flex">
+                    <div class="burger-container">
                         <svg class="btn header__mid__close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="4.57538" y="2.9541" width="24" height="3" rx="1.5" transform="rotate(45 4.57538 2.9541)" fill="#A65CF0"/>
                             <rect x="21.546" y="5.0752" width="24" height="3" rx="1.5" transform="rotate(135 21.546 5.0752)" fill="#A65CF0"/>
                         </svg>
-                        <li class="header__mid__item"><a tabindex="6" class="header__mid__link" href="catalog.html">Каталог</a></li>
-                        <li class="header__mid__item"><a tabindex="7" class="header__mid__link" href="#">Магазины</a></li>
-                        <li class="header__mid__item"><a tabindex="8" class="header__mid__link" href="#">Шоу-рум</a></li>
-                        <li class="header__mid__item"><a tabindex="9" class="header__mid__link" href="#">Доставка и оплата</a></li>
-                        <li class="header__mid__item"><a tabindex="10" class="header__mid__link" href="#">Дисконт</a></li>
-                        <li class="header__mid__item"><a tabindex="11" class="header__mid__link" href="#">Контакты</a></li>
-                    </ul>
+                        <ul class="header__mid__list flex">
+                            <li class="header__mid__item"><a tabindex="6" class="header__mid__link" href="catalog.html">Каталог</a></li>
+                            <li class="header__mid__item"><a tabindex="7" class="header__mid__link" href="#">Магазины</a></li>
+                            <li class="header__mid__item"><a tabindex="8" class="header__mid__link" href="#">Шоу-рум</a></li>
+                            <li class="header__mid__item"><a tabindex="9" class="header__mid__link" href="#">Доставка и оплата</a></li>
+                            <li class="header__mid__item"><a tabindex="10" class="header__mid__link" href="#">Дисконт</a></li>
+                            <li class="header__mid__item"><a tabindex="11" class="header__mid__link" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -169,10 +170,10 @@
                     <div class="content__left__gallery">
                         <img class="content__left__gallery__main" src="./img/sofa-1.png" alt="ракурс">
                         <div class="content__left__gallery__bar flex">
-                            <img class="content__left__gallery__img" src="./img/sofa-2.png" alt="ракурс">
-                            <img class="content__left__gallery__img" src="./img/sofa-3.png" alt="ракурс">
-                            <img class="content__left__gallery__img" src="./img/sofa-4.png" alt="ракурс">
-                            <img class="content__left__gallery__img" src="./img/sofa-5.png" alt="ракурс">
+                            <img class="content__left__gallery__img c-l-g-i-1" src="./img/sofa-2.png" alt="ракурс">
+                            <img class="content__left__gallery__img c-l-g-i-2" src="./img/sofa-3.png" alt="ракурс">
+                            <img class="content__left__gallery__img c-l-g-i-3" src="./img/sofa-4.png" alt="ракурс">
+                            <img class="content__left__gallery__img c-l-g-i-4" src="./img/sofa-5.png" alt="ракурс">
                         </div>
                     </div>
                     <div class="content__left__description">
@@ -268,7 +269,7 @@
                     <div class="similar__swiper__head flex">
                         <h2 class="similar__title title">Похожие товары</h2>
                         <div class="similar__buttons flex">
-                            <div class="swiper-button-prev">
+                            <div class="swiper-button-prev similar__buttons__prev">
                                 <svg tabindex="0" class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_38613_3690)">
                                     <circle r="15" transform="matrix(-1 0 0 1 16 16)" stroke="#A65CF0" stroke-width="2"/>
@@ -281,7 +282,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <div class="swiper-button-next">
+                            <div class="swiper-button-next similar__buttons__next">
                                 <svg tabindex="0" class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_38613_3693)">
                                     <circle cx="16" cy="16" r="15" stroke="#A65CF0" stroke-width="2"/>
@@ -296,136 +297,172 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper similar__wrapper">
                         <div class="swiper-slide similar__slide">
-                            <div class="card c-7 flex">
+                            <div class="card c-16 flex">
                                 <p class="card__raiting">4,5</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/r-85.png" alt="">
-                                    <h3 class="card__title">Диван велюровый<br>“R-85”</h3>
-                                    <p class="card__price">34 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван велюровый<br>“R-85”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">34 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
-                            <div class="card c-2 flex">
+                            <div class="card c-11 flex">
                                 <p class="card__raiting">4,6</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/h-58.png" alt="">
-                                    <h3 class="card__title">Диван флоковый<br>“H-58”</h3>
-                                    <p class="card__price">23 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван флоковый<br>“H-58”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">23 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
-                            <div class="card c-8 flex">
+                            <div class="card c-17 flex">
                                 <p class="card__raiting">4.5</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/s-44.png" alt="">
-                                    <h3 class="card__title">Диван велюровый<br>“S-44”</h3>
-                                    <p class="card__price">19 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван велюровый<br>“S-44”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">19 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-7 flex">
                                 <p class="card__raiting">4,8</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/V-43.png" alt="">
-                                    <h3 class="card__title">Диван шиниловый<br>“V-43”</h3>
-                                    <p class="card__price">19 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван шиниловый<br>“V-43”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">19 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-1 flex">
                                 <p class="card__raiting">5,0</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/R-94.png" alt="">
-                                    <h3 class="card__title">Диван кожаный<br>“R-94”</h3>
-                                    <p class="card__price">94 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван кожаный<br>“R-94”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">94 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-2 flex">
                                 <p class="card__raiting">4,9</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/T-75.png" alt="">
-                                    <h3 class="card__title">Диван апартековый<br>“T-75”</h3>
-                                    <p class="card__price">69 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван апартековый<br>“T-75”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">69 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-3 flex">
                                 <p class="card__raiting">4,8</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/D-31.png" alt="">
-                                    <h3 class="card__title">Диван тканевый<br>“D-31”</h3>
-                                    <p class="card__price">28 490 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван тканевый<br>“D-31”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">28 490 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-4 flex">
                                 <p class="card__raiting">4,8</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/Y-68.png" alt="">
-                                    <h3 class="card__title">Диван велюровый<br>“Y-68”</h3>
-                                    <p class="card__price">22 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван велюровый<br>“Y-68”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">22 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-5 flex">
                                 <p class="card__raiting">4.8</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/W-95.png" alt="">
-                                    <h3 class="card__title">Диван из шинила<br>“W-95”</h3>
-                                    <p class="card__price">22 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван из шинила<br>“W-95”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">22 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-6 flex">
                                 <p class="card__raiting">4,8</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/G-41.png" alt="">
-                                    <h3 class="card__title">Диван флоковый<br>“G-41”</h3>
-                                    <p class="card__price">17 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван флоковый<br>“G-41”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">17 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-8 flex">
                                 <p class="card__raiting">4.7</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/S-99.png" alt="">
-                                    <h3 class="card__title">Диван велюровый<br>“S-99”</h3>
-                                    <p class="card__price">19 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван велюровый<br>“S-99”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">19 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide similar__slide">
                             <div class="card c-9 flex">
                                 <p class="card__raiting">4.7</p>
-                                <div class="card__info">
-                                    <img class="card__img" src="./img/F-85.png" alt="">
-                                    <h3 class="card__title">Диван из кожзама<br>“F-85”</h3>
-                                    <p class="card__price">26 990 руб</p>
-                                    <button class="card__btn btn btn-secondary">Купить</button>
+                                <div class="card__info flex">
+                                    <a href="./product-page.html">
+                                        <h3 class="card__title">Диван из кожзама<br>“F-85”</h3>
+                                    </a>
+                                    <div class="card__info__bottom">
+                                        <p class="card__price">26 990 руб</p>
+                                        <button class="card__btn btn btn-secondary">Купить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -434,6 +471,7 @@
             </div>
         </div>
     </main>
+
 
     <footer class="footer">
         <div class="footer__top">
@@ -470,25 +508,25 @@
                 <div class="footer__top__right flex">
                     <ul class="footer__top__right__list f-t-r-l-1">
                         <li class="footer__top__right__item main">О нас</li>
-                        <li class="footer__top__right__item"><a href="#">О&nbsp;компании</a></li>
-                        <li class="footer__top__right__item"><a href="#">Блог</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">О&nbsp;компании</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">Блог</a></li>
                     </ul>
                     <ul class="footer__top__right__list f-t-r-l-2">
                         <li class="footer__top__right__item main">Услуги</li>
-                        <li class="footer__top__right__item"><a href="#">Доставка</a></li>
-                        <li class="footer__top__right__item"><a href="#">Рассрочка&nbsp;и&nbsp;кредит</a></li>
-                        <li class="footer__top__right__item"><a href="#">Сборка&nbsp;и&nbsp;установка</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">Доставка</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">Рассрочка&nbsp;и&nbsp;кредит</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">Сборка&nbsp;и&nbsp;установка</a></li>
                     </ul>
                     <ul class="footer__top__right__list f-t-r-l-3">
                         <li class="footer__top__right__item main">Связь с нами</li>
-                        <li class="footer__top__right__item"><a href="#">Обратная&nbsp;связь</a></li>
-                        <li class="footer__top__right__item"><a href="#">Контакты</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">Обратная&nbsp;связь</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">Контакты</a></li>
                     </ul>
                     <ul class="footer__top__right__list f-t-r-l-4">
                         <li class="footer__top__right__item main">Сотрудничество</li>
-                        <li class="footer__top__right__item"><a href="./partnership.html">Поставщикам</a></li>
-                        <li class="footer__top__right__item"><a href="#">Оптовикам</a></li>
-                        <li class="footer__top__right__item"><a href="#">Карьера</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="./partnership.html">Поставщикам</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">Оптовикам</a></li>
+                        <li class="footer__top__right__item"><a tabindex="0" class="footer__top__right__link" href="#">Карьера</a></li>
                     </ul>
                 </div>
             </div>

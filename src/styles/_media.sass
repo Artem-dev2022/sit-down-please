@@ -28,16 +28,8 @@
     .header__bottom__search__input
         width: 652px
     .hero
-        &__slide
-            max-width: 1024px !important
-            &__img
-                width: 100% !important
         &__content
             max-width: 952px !important
-    .swiper
-        max-width: 1024px !important
-    .swiper-slide
-        max-width: 1024px !important
     .special__swiper,
     .special__swiper-wrapper
         width: 952px !important
@@ -62,12 +54,6 @@
         display: none
     .high-raiting__block
         grid-template-columns: repeat(3, 1fr) !important
-    .oxford
-        max-width: 1024px !important
-        height: 600px !important
-        margin-bottom: 70px !important
-        &__img
-            width: 100% !important
     .top-categories__block
         grid-template-columns: repeat(3, 1fr) !important
         grid-template-areas: "top-left top-left bottom-left" "bottom-mid top-right bottom-right" !important
@@ -88,23 +74,32 @@
     .t-c-c-5
         background-position: -161px 107px !important
         background-size: 449px  !important
+    .oxford
+        background-image: url('../../img/oxford-1024.jpg')
     .useful__swiper
         width: 952px !important
         height: fit-content !important
     .useful__wrapper
-        height: 456px !important
+        min-height: 456px !important
     .useful__slide
         width: 296px !important
-        height: 456px !important
+        //height: 100% !important
+        min-height: 456px !important
         background-size: 100% 202px !important
     .useful__content
         width: 296px
-        height: 254px !important
+        padding-top: 232px !important
+        //height: 254px !important
     .useful__text
         font-size: 16px !important
         line-height: 22px !important
+        margin-bottom: 30px !important
+    .we-glad
+        margin-bottom: 70px !important
     .we-glad__form
         width: 405px !important
+    .we-glad__form__text
+        margin-bottom: 14px !important
     .we-glad__img
         width: 514px !important
         height: 316px !important
@@ -134,7 +129,6 @@
         height: 300px !important
         width: 100vw !important
         z-index: 1000
-        
         opacity: 0
         visibility: hidden
     .burger-container
@@ -180,8 +174,8 @@
         display: block !important
         margin-right: 194px
     .hero
-        &__slide
-            max-width: 767px !important
+        &__swiper
+            width: 100vw !important
         &__content
             max-width: 622px !important
     .special__swiper
@@ -192,17 +186,22 @@
     .top-categories__block
         grid-template-columns: repeat(2, 1fr) !important
         grid-template-areas: "top-left top-left" "bottom-left top-right" "bottom-mid  bottom-right" !important
+    .oxford
+        width: 100vw
+        background-image: url('../../img/oxford-768.jpg')
     .oxford__container
         width: 696px !important
     .useful__swiper
         width: 624px !important
+    //.useful__content
+        //padding-top: 232px !important
     .we-glad
         margin-bottom: 70px !important
     .we-glad__img
         width: 187px !important
         height: 444px !important
-    .we-glad__form__input:last-child
-        margin-bottom: 31px
+    .we-glad__form__input
+        margin-bottom: 30px
     .footer__top
         padding: 25px 0 !important
     .footer__top .container
@@ -242,7 +241,6 @@
         margin-right: 60px !important
         margin-bottom: 12px !important
     .header__top__item:nth-child(1)
-        //width: 114px !important
         margin-right: 61px !important
     .header__top__item:nth-child(3)
         width: 114px !important
@@ -315,7 +313,10 @@
         margin-bottom: 32px !important
     .hero__swiper,
     .hero__slide
-        width: 320px !important
+        //width: 320px !important
+        height: 210px !important
+    .hero__slide__img
+        object-position: center
         height: 210px !important
     .hero__content
         padding: 30px 18px !important
@@ -325,10 +326,9 @@
     .content__btn
         display: none
     .swiper-pagination
-        bottom: 16px !important
-    .swiper-pagination-bullets
+        bottom: 11px !important
+        width: 34px !important
         height: 6px
-        bottom: 19px !important
     .swiper-pagination-bullet
         width: 6px !important
         height: 6px !important
@@ -346,6 +346,7 @@
     .special__swiper
         width: 296px !important
         min-height: 633px !important
+        padding-bottom: 48px
     .special__buttons
         position: absolute
         bottom: 0
@@ -358,7 +359,6 @@
         &__card
             padding: 16px !important
             width: 140px !important
-            height: 278px !important
             background-size: 108px !important
             min-height: 278px !important
             &__info
@@ -393,9 +393,10 @@
     .high-raiting__card__raiting
         font-size: 12px !important
     .oxford
+        background-image: url('../../img/oxford-320.jpg')
+        background-size: 100% 210px
         height: 302px !important
-        &__img
-            height: 210px !important
+        margin-bottom: 70px
     .oxford__container
         padding: 30px 0 !important
     .oxford__title
@@ -410,7 +411,7 @@
         margin: 0 auto
         width: 296px !important
     .top-categories
-        margin-bottom: 76px !important
+        margin-bottom: 79px !important
     .top-categories__block
         grid-template-columns: repeat(2, 1fr) !important
         gap: 16px !important
@@ -484,9 +485,11 @@
         .top-categories__card__link svg
             top: 48px !important
             left: 75px !important
+    .useful
+        margin-bottom: 70px !important
     .useful__swiper
         width: 296px !important
-        height: 557px !important
+        padding-bottom: 48px
     .useful__buttons
         position: absolute
         bottom: 0
@@ -500,6 +503,7 @@
         margin-bottom: 66px !important
     .we-glad__form__text
         margin-bottom: 14px !important
+        line-height: 19px !important
     .we-glad__form__field p
         font-size: 12px
     .we-glad__img

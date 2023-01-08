@@ -6,32 +6,34 @@
   margin-bottom: 70px;
 }
 .hero__slide {
-  max-width: 1920px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .hero__slide__img {
   width: 100%;
   height: 400px;
+  object-fit: cover;
+  object-position: left top;
 }
 .hero .swiper {
-  max-width: 1920px;
+  width: calc(100vw - 20px);
   height: 400px;
   margin: 0 auto;
 }
-.hero .swiper-slide {
-  position: relative;
-  height: 100%;
-}
 .hero .swiper-pagination {
-  bottom: 23px !important;
+  right: 0;
+  left: 0;
+  bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 74px;
+  margin: 0 auto;
 }
 .hero .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
-  margin: 0 !important;
-  margin-right: 16px !important;
-}
-.hero .swiper-pagination-bullet:last-child {
-  margin-right: 0 !important;
+  margin: 0px !important;
 }
 .hero .swiper-pagination-bullet-active {
   background-color: #333333;
@@ -66,7 +68,6 @@
 }
 .special__swiper {
   min-height: 569px;
-  padding-top: 58px;
 }
 .special__swiper__head {
   justify-content: space-between;
@@ -302,16 +303,15 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
-  margin-bottom: 67px;
-}
-.oxford__img {
-  width: 100%;
+  width: calc(100vw - 20px);
   height: 600px;
   margin: 0 auto;
+  margin-bottom: 70px;
+  background-image: url("../../img/oxford1950.jpg");
+  background-size: cover;
+  background-position: center top;
 }
-.oxford .container {
+.oxford__container {
   position: absolute;
   top: 0;
   flex-direction: column;
@@ -443,16 +443,11 @@
   margin-bottom: 70px;
   --swiper-navigation-size: 0;
 }
-.useful__swiper {
-  height: auto !important;
-  min-height: 734px !important;
-}
 .useful__swiper__head {
   justify-content: space-between;
   margin-bottom: 26px;
 }
-.useful__swiper .swiper-wrapper {
-  height: auto !important;
+.useful__wrapper {
   min-height: 676px !important;
 }
 .useful__title {
@@ -473,7 +468,6 @@
 }
 .useful__content {
   flex-direction: column;
-  justify-content: space-between;
   padding: 30px;
   padding-top: 456px;
   height: 100%;
@@ -484,6 +478,10 @@
   font-size: 24px;
   line-height: 33px;
   color: #333333;
+  margin-bottom: 38px;
+}
+.useful__btn {
+  margin-top: auto;
 }
 .useful .u-s-1 {
   background-image: url("../../img/useful-1.jpg");
@@ -540,7 +538,7 @@
 .we-glad__form__text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   color: #666666;
   margin-bottom: 16px;
 }

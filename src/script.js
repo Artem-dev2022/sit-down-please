@@ -38,7 +38,7 @@ const swiperUseful = new Swiper('.useful__swiper', {
   slidesPerView: 2,
   slidesPerGroup: 1,
   breakpoints: {
-    1540: {
+    1920: {
       slidesPerView: 2,
       spaceBetween: 32
     },

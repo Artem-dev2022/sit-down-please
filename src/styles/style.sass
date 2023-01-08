@@ -23,26 +23,31 @@ $bone: #FFF5D1
 .hero
     margin-bottom: 70px
     &__slide
-        max-width: 1920px
+        position: relative
+        width: 100%
+        height: 100%
         &__img
             width: 100%
             height: 400px
+            object-fit: cover
+            object-position: left top
+            
     .swiper 
-        max-width: 1920px
+        width: calc( 100vw - 20px )
         height: 400px
         margin: 0 auto
-    .swiper-slide
-        position: relative
-        height: 100%
     .swiper-pagination
-        bottom: 23px !important
+        right: 0
+        left: 0
+        bottom: 24px
+        display: flex
+        justify-content: space-between
+        width: 74px
+        margin: 0 auto
     .swiper-pagination-bullet
         width: 14px
         height: 14px
-        margin: 0 !important
-        margin-right: 16px !important
-    .swiper-pagination-bullet:last-child
-        margin-right: 0 !important
+        margin: 0px !important
     .swiper-pagination-bullet-active
         background-color: $black
     .content
@@ -69,7 +74,6 @@ $bone: #FFF5D1
         margin: 0
     &__swiper
         min-height: 569px
-        padding-top: 58px
         &__head
             justify-content: space-between
             margin-bottom: 26px
@@ -257,14 +261,14 @@ $bone: #FFF5D1
     flex-direction: column
     align-items: center
     position: relative
-    max-width: 1920px
+    width: calc( 100vw - 20px )
+    height: 600px
     margin: 0 auto
-    margin-bottom: 67px
-    &__img
-        width: 100%
-        height: 600px
-        margin: 0 auto
-    .container
+    margin-bottom: 70px
+    background-image: url('../../img/oxford1950.jpg')
+    background-size: cover
+    background-position: center top
+    &__container
         position: absolute
         top: 0
         flex-direction: column
@@ -370,14 +374,11 @@ $bone: #FFF5D1
 .useful
     margin-bottom: 70px
     &__swiper
-        height: auto !important
-        min-height: 734px !important
         &__head
             justify-content: space-between
             margin-bottom: 26px
-        .swiper-wrapper
-            height: auto !important
-            min-height: 676px !important
+    &__wrapper
+        min-height: 676px !important
     &__title
         margin: 0
     &__buttons
@@ -393,7 +394,6 @@ $bone: #FFF5D1
         border-radius: 10px
     &__content
         flex-direction: column
-        justify-content: space-between
         padding: 30px
         padding-top: 456px
         height: 100%
@@ -403,6 +403,9 @@ $bone: #FFF5D1
         font-size: 24px
         line-height: 33px
         color: $black
+        margin-bottom: 38px
+    &__btn
+        margin-top: auto
     .u-s-1
         background-image: url("../../img/useful-1.jpg")
     .u-s-2
@@ -445,7 +448,7 @@ $bone: #FFF5D1
         &__text
             font-weight: 400
             font-size: 14px
-            line-height: 19px
+            line-height: 20px
             color: $grey-shade
             margin-bottom: 16px
         &__field
