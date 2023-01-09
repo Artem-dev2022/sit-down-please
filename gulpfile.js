@@ -9,7 +9,7 @@ const babel = require('gulp-babel')
 const notify = require('gulp-notify')
 const sourcemaps = require('gulp-sourcemaps')
 //const deleteAsync = require('del')
-//const browserSync = require('browser-sync').create()
+const browserSync = require('browser-sync').create()
 /* 
 const clean = () => {
     return deleteAsync(['dist'])
@@ -25,19 +25,19 @@ const stylesBuild = () => {
             level: 2
         }))
         .pipe(dest('dist/styles'))
-        //.pipe(browserSync.stream())
+        .pipe(browserSync.stream())
 }
 
 const styles = () => {
     return src('src/styles/**/*.css')
     .pipe(sourcemaps.init())
-    //.pipe(concat('main.css'))
+    .pipe(concat('main.css'))
     .pipe(cleanCSS({
         level: 2
     }))
     .pipe(sourcemaps.write())
     .pipe(dest('dist/styles'))
-    //.pipe(browserSync.stream())
+    .pipe(browserSync.stream())
 }
 
 const htmlMinifyBuild = () => {
@@ -46,13 +46,13 @@ const htmlMinifyBuild = () => {
             collapseWhitespace: true,
         }))
         .pipe(dest('dist'))
-        //.pipe(browserSync.stream())
+        .pipe(browserSync.stream())
 }
 
 const htmlMinify = () => {
     return src('src/*.html')
     .pipe(dest('dist'))
-    //.pipe(browserSync.stream())
+    .pipe(browserSync.stream())
 }
 
 const scriptsBuild =() => {
@@ -65,7 +65,7 @@ const scriptsBuild =() => {
         toplevel: true
     }).on('error', notify.onError()))
     .pipe(dest('dist'))
-   // .pipe(browserSync.stream())
+    .pipe(browserSync.stream())
 }
 
 const scripts = () => {
@@ -74,9 +74,9 @@ const scripts = () => {
     //.pipe(concat('app.js'))
     .pipe(sourcemaps.write())
     .pipe(dest('dist'))
-    //.pipe(browserSync.stream())
+    .pipe(browserSync.stream())
 }
-/* 
+
 const watchFiles = () => {
     browserSync.init({
         server: {
@@ -84,7 +84,7 @@ const watchFiles = () => {
         }
     })
 }
- */
+
 const images = () => {
     return src([
         'src/img/**/*jpg',
@@ -114,5 +114,5 @@ watch('src/*.js', scripts)
 exports.styles = styles
 exports.htmlMinify = htmlMinify
 exports.scripts = scripts
-exports.default = series(fonts, htmlMinify, scripts, styles, images)
+exports.default = series(fonts, htmlMinify, scripts, styles, images, watchFiles)
 exports.build = parallel(fonts, htmlMinifyBuild, scriptsBuild, stylesBuild, images)
