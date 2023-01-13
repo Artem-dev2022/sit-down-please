@@ -30,14 +30,14 @@ const stylesBuild = () => {
 
 const styles = () => {
     return src('src/styles/**/*.css')
-    .pipe(sourcemaps.init())
-    .pipe(concat('main.css'))
-    .pipe(cleanCSS({
-        level: 2
-    }))
-    .pipe(sourcemaps.write())
-    .pipe(dest('dist/styles'))
-    .pipe(browserSync.stream())
+        .pipe(sourcemaps.init())
+        //.pipe(concat('main.css'))
+        .pipe(cleanCSS({
+            level: 2
+        }))
+        .pipe(sourcemaps.write())
+        .pipe(dest('dist/styles'))
+        .pipe(browserSync.stream())
 }
 
 const htmlMinifyBuild = () => {
@@ -60,10 +60,7 @@ const scriptsBuild =() => {
     .pipe(babel({
         presets: ['@babel/env']
     }))
-    //.pipe(concat('app.js'))
-    .pipe(uglify({
-        toplevel: true
-    }).on('error', notify.onError()))
+    .pipe(uglify())
     .pipe(dest('dist'))
     .pipe(browserSync.stream())
 }
@@ -71,7 +68,6 @@ const scriptsBuild =() => {
 const scripts = () => {
     return src('src/*.js')
     .pipe(sourcemaps.init())
-    //.pipe(concat('app.js'))
     .pipe(sourcemaps.write())
     .pipe(dest('dist'))
     .pipe(browserSync.stream())
